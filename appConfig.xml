@@ -1,5 +1,4 @@
 <appDefinition>
-   <appId>AccCreation</appId>
    <id>AccCreation</id>
    <version></version>
    <name>Account Creation App</name>
@@ -13,25 +12,25 @@
       <environmentVariable>
          <id>AppName</id>
          <appId>AccCreation</appId>
-         <appVersion>7</appVersion>
+         <appVersion>1</appVersion>
          <value>Account Creation App</value>
       </environmentVariable>
       <environmentVariable>
          <id>Approver</id>
          <appId>AccCreation</appId>
-         <appVersion>7</appVersion>
+         <appVersion>1</appVersion>
          <value>admin</value>
       </environmentVariable>
       <environmentVariable>
          <id>SignupNo</id>
          <appId>AccCreation</appId>
-         <appVersion>7</appVersion>
+         <appVersion>1</appVersion>
          <value>33</value>
       </environmentVariable>
       <environmentVariable>
          <id>url</id>
          <appId>AccCreation</appId>
-         <appVersion>7</appVersion>
+         <appVersion>1</appVersion>
          <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/accountsToBeApproved</value>
       </environmentVariable>
    </environmentVariableList>
