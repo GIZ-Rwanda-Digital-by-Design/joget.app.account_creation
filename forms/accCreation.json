@@ -120,13 +120,6 @@
                         "readonly": "",
                         "size": "",
                         "maxlength": "",
-                        "validator": {
-                            "className": "org.joget.plugin.enterprise.PasswordValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "confirmPasswordField": "password"
-                            }
-                        },
                         "id": "passwordConfirm",
                         "label": "Confirm password",
                         "value": "",
