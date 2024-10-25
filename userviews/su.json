@@ -116,19 +116,23 @@
     },
     "setting": {"properties": {
         "__": "",
+        "tempDisablePermissionChecking": "",
         "userviewDescription": "",
+        "userviewId": "su",
         "hideThisUserviewInAppCenter": "",
         "userview_thumbnail": "#appResource.user-account-login-icon.png#",
+        "userview_category": "",
         "theme": {
-            "className": "org.joget.plugin.enterprise.ProgressiveTheme",
+            "className": "org.joget.gov.GovTheme",
             "properties": {
                 "css": "",
                 "buttonColor": "GREY",
                 "displayCategoryLabel": "",
-                "primaryColor": "INDIGO",
+                "primaryColor": "DARKROYALBLUE",
                 "js": "",
+                "loginBackground": "",
                 "disablePush": "",
-                "removeAssignmentTitle": "true",
+                "removeAssignmentTitle": "",
                 "userMenu": [],
                 "urlsToCache": "",
                 "loginPageTop": "",
@@ -137,14 +141,14 @@
                 "shortcutLinkLabel": "Shortcut",
                 "disableHelpGuide": "",
                 "fontControl": "",
-                "logo": "#appResource.user-account-login-icon.png#",
+                "logo": "",
                 "enableResponsiveSwitch": "true",
                 "buttonTextColor": "WHITE",
-                "fav_icon": "#appResource.user-account-login-icon.png#",
-                "horizontal_menu": "horizontal_inline",
+                "fav_icon": "",
+                "horizontal_menu": "",
                 "accentColor": "BLUE",
                 "menuFontColor": "BLACK",
-                "profile": "true",
+                "profile": "",
                 "homeAttractBanner": "",
                 "homeUrl": "",
                 "subheader": "",
@@ -159,6 +163,7 @@
         "permission": {
             "className": "",
             "properties": {}
-        }
+        },
+        "userviewName": "Account Creation App"
     }}
 }
