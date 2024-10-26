@@ -367,16 +367,18 @@
                                 "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
                                 "properties": {
                                     "headers": [],
-                                    "addEmptyOption": "true",
+                                    "addEmptyOption": "",
                                     "groupingColumn": "",
-                                    "requestType": "",
+                                    "requestType": "post",
                                     "jsonUrl": "https://joget-workflow-dev.stack.dev.risa.gov.rw/jw/web/json/directory/admin/group/list",
-                                    "labelColumn": "name",
                                     "multirowBaseObject": "data",
                                     "emptyDependencyValueCheck": "",
-                                    "copyCookies": "",
+                                    "params": [],
+                                    "postMethod": "",
+                                    "labelColumn": "name",
+                                    "copyCookies": "true",
                                     "cacheInterval": "",
-                                    "debugMode": "",
+                                    "debugMode": "true",
                                     "idColumn": "in"
                                 }
                             },
