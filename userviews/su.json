@@ -43,35 +43,64 @@
                 }
             ],
             "properties": {
+                "hide": "",
                 "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
                 "id": "category-BF45AFCEDC934F059FE34467CA495FF6",
-                "label": "User"
+                "label": "<i class=\"far fa-address-book\"><\/i> User"
             }
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.apps.userview.lib.DataListMenu",
-                "properties": {
-                    "cacheAllLinks": "",
-                    "customHeader": "",
-                    "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
-                    "keyName": "",
-                    "customFooter": "",
-                    "label": "Account Requests",
-                    "enableOffline": "",
-                    "customId": "",
-                    "buttonPosition": "bothLeft",
-                    "datalistId": "accCreation",
-                    "checkboxPosition": "left",
-                    "selectionType": "multiple",
-                    "userviewCacheDuration": "20",
-                    "cacheListAction": "",
-                    "userviewCacheScope": "",
-                    "rowCount": "true",
-                    "id": "B2FF94272205462FA1EDE118613316F3"
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "assignment-customHeader": "",
+                        "assignment-customFooter": "",
+                        "label": "Process Inbox",
+                        "enableOffline": "",
+                        "customId": "Inbox",
+                        "buttonPosition": "bothLeft",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "processId": "signup",
+                        "showPopup": "",
+                        "rowCount": "true",
+                        "id": "BACAF27891904AE3739BD3D2469CAF3D",
+                        "list-customHeader": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Account Requests",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "accCreation",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "true",
+                        "id": "B2FF94272205462FA1EDE118613316F3"
+                    }
                 }
-            }],
+            ],
             "properties": {
                 "hide": "yes",
                 "permissionComment": "",
