@@ -369,7 +369,7 @@
                                     "addEmptyOption": "true",
                                     "groupingColumn": "",
                                     "requestType": "",
-                                    "jsonUrl": "web/json/directory/admin/group/list",
+                                    "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#web/json/directory/admin/group/list",
                                     "labelColumn": "name",
                                     "multirowBaseObject": "data",
                                     "emptyDependencyValueCheck": "",
