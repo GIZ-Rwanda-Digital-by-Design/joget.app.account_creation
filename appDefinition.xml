@@ -65,7 +65,7 @@
                   <processDefId>signup</processDefId>
                   <activityDefId>loopOverGroups</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.BeanShellTool&quot;,&quot;properties&quot;:{&quot;script&quot;:&quot;import org.joget.workflow.model.service.*;\n \nWorkflowManager wm = (WorkflowManager) pluginManager.getBean(\&quot;workflowManager\&quot;);\nwm.activityVariable(workflowAssignment.getActivityId(),\&quot;groupCounter\&quot;, 0);\n&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.WorkflowVariableUpdateTool&quot;,&quot;properties&quot;:{&quot;workflowVarMapping&quot;:[{&quot;variable&quot;:&quot;groupCounter&quot;,&quot;changeValueTo&quot;:&quot;0&quot;}]}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
