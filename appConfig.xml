@@ -20,7 +20,8 @@
          <id>url</id>
          <appId>AccCreation</appId>
          <appVersion>1</appVersion>
-         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/accountsToBeApproved</value>
+         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/_ja_inbox</value>
+         <remarks></remarks>
       </environmentVariable>
    </environmentVariableList>
    <messageList/>
