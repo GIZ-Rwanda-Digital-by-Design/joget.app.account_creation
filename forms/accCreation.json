@@ -115,18 +115,6 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.PasswordField",
-                    "properties": {
-                        "readonly": "",
-                        "size": "",
-                        "maxlength": "",
-                        "id": "passwordConfirm",
-                        "label": "Confirm password",
-                        "value": "",
-                        "readonlyLabel": ""
-                    }
-                },
-                {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
