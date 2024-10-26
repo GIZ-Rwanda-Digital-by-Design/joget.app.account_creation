@@ -124,7 +124,7 @@
                             "properties": {}
                         },
                         "label": "Groups requested",
-                        "fieldInput-style-height": "10em",
+                        "fieldInput-style-height": "15em",
                         "readonly": "",
                         "size": "10",
                         "optionsBinder": {
