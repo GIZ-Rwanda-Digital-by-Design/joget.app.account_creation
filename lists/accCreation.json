@@ -32,9 +32,9 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "createdBy",
-            "id": "column_1",
-            "label": "Created By",
+            "name": "username",
+            "id": "column_8",
+            "label": "Username",
             "sortable": "false"
         },
         {
@@ -59,22 +59,6 @@
             "name": "groupsRequested",
             "id": "column_7",
             "label": "Groups requested",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "username",
-            "id": "column_4",
-            "label": "Username",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "name": "userRoles",
-            "id": "column_5",
-            "label": "userRoles",
             "sortable": "false"
         }
     ],
