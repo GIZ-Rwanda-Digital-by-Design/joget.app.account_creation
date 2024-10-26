@@ -90,6 +90,11 @@
                 "permission_rules": {
                     "ec93b6f1-7664-3666-bd95-78072bff4910": {
                         "hide": "",
+                        "permissionComment": "",
+                        "permission": {
+                            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                            "properties": {}
+                        },
                         "permissionDeny": ""
                     },
                     "053faca4-7ed7-9e1c-e246-d3eebc82470e": {
