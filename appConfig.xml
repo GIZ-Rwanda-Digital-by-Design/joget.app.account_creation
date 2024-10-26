@@ -10,12 +10,6 @@
    <pluginDefaultPropertiesList/>
    <environmentVariableList>
       <environmentVariable>
-         <id>AppName</id>
-         <appId>AccCreation</appId>
-         <appVersion>1</appVersion>
-         <value>Account Creation App</value>
-      </environmentVariable>
-      <environmentVariable>
          <id>maxAccountRequestID</id>
          <appId>AccCreation</appId>
          <appVersion>1</appVersion>
