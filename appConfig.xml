@@ -14,7 +14,6 @@
          <appId>AccCreation</appId>
          <appVersion>1</appVersion>
          <value>0</value>
-         <remarks></remarks>
       </environmentVariable>
       <environmentVariable>
          <id>SignupNo</id>
@@ -28,7 +27,6 @@
          <appId>AccCreation</appId>
          <appVersion>1</appVersion>
          <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/_ja_inbox</value>
-         <remarks></remarks>
       </environmentVariable>
    </environmentVariableList>
    <messageList/>
