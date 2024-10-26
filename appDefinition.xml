@@ -134,5 +134,5 @@
       </appResource>
    </resourceList>
    <license>pHWYEXz7oylFy8pxP6yrjSGqO0G4h/ey1Ki24yETEJyv38yletVy8fKWdtQS9XX9ROBcrWdKG0c=</license>
-   <description>Version 2 Account Creation App with Groups</description>
+   <description>Basic Account Creation App without Groups and Reset.</description>
 </appDefinition>
