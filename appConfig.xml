@@ -1,5 +1,4 @@
 <appDefinition>
-   <appId>AccCreation</appId>
    <id>AccCreation</id>
    <version></version>
    <name>Account Creation App</name>
@@ -13,7 +12,6 @@
       <environmentVariable>
          <id>maxAccountRequestID</id>
          <value>0</value>
-         <remarks></remarks>
       </environmentVariable>
       <environmentVariable>
          <id>SignupNo</id>
@@ -23,7 +21,6 @@
       <environmentVariable>
          <id>url</id>
          <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/_ja_inbox</value>
-         <remarks></remarks>
       </environmentVariable>
    </environmentVariableList>
    <messageList/>
