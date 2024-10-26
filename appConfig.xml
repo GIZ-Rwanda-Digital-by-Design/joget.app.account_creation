@@ -16,12 +16,6 @@
          <value>Account Creation App</value>
       </environmentVariable>
       <environmentVariable>
-         <id>Approver</id>
-         <appId>AccCreation</appId>
-         <appVersion>1</appVersion>
-         <value>admin</value>
-      </environmentVariable>
-      <environmentVariable>
          <id>maxAccountRequestID</id>
          <appId>AccCreation</appId>
          <appVersion>1</appVersion>
