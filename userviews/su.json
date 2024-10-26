@@ -185,8 +185,11 @@
             }
         },
         "permission": {
-            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-            "properties": {}
+            "className": "org.joget.apps.userview.lib.UserPermission",
+            "properties": {
+                "allowedUsernames": "wiemann.thomas",
+                "orgId": ""
+            }
         },
         "userviewName": "Account Creation App"
     }}
