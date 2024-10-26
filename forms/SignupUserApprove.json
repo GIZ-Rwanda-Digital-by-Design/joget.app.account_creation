@@ -60,7 +60,12 @@
             "elements": [{
                 "elements": [],
                 "className": "org.joget.apps.form.model.Column",
-                "properties": {"width": "100%"}
+                "properties": {
+                    "horizontal": "",
+                    "customWidth": "",
+                    "width": "100%",
+                    "label": ""
+                }
             }],
             "className": "org.joget.apps.form.model.Section",
             "properties": {
