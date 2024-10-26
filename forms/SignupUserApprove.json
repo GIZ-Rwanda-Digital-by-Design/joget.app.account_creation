@@ -24,10 +24,11 @@
                     {
                         "className": "org.joget.apps.form.lib.CustomHTML",
                         "properties": {
+                            "requiredSanitize": "",
                             "autoPopulate": "",
-                            "id": "field8_1",
                             "label": "",
-                            "value": "<script type=\"text/javascript\">\r\n$(document).ready( function(){\r\n $(\"#cancel\").html(\" Return to list \");\r\n $(\".print-button\").hide();\r\n});\r\n<\/script>"
+                            "id": "field15",
+                            "value": "#request.scheme#://#request.serverName##request.contextPath#/web/json/directory/admin/group/list"
                         }
                     }
                 ],
@@ -369,7 +370,7 @@
                                     "addEmptyOption": "true",
                                     "groupingColumn": "",
                                     "requestType": "",
-                                    "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#web/json/directory/admin/group/list",
+                                    "jsonUrl": "#request.scheme#://#request.serverName##request.contextPath#/web/json/directory/admin/group/list",
                                     "labelColumn": "name",
                                     "multirowBaseObject": "data",
                                     "emptyDependencyValueCheck": "",
