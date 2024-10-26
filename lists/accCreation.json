@@ -12,6 +12,10 @@
             "breakpoint": ""
         }
     ],
+    "template": {
+        "className": "",
+        "properties": {}
+    },
     "useSession": "",
     "showPageSizeSelector": "true",
     "searchPopup": "",
@@ -47,6 +51,14 @@
             "name": "lastName",
             "id": "column_3",
             "label": "Last name",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "groupsRequested",
+            "id": "column_7",
+            "label": "Groups requested",
             "sortable": "false"
         },
         {
