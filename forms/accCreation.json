@@ -118,6 +118,13 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
+                        "multiple": "true",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "label": "Groups requested",
+                        "fieldInput-style-height": "10em",
                         "readonly": "",
                         "size": "10",
                         "optionsBinder": {
@@ -139,14 +146,8 @@
                                 "idColumn": "id"
                             }
                         },
-                        "multiple": "true",
                         "options": [],
-                        "validator": {
-                            "className": "",
-                            "properties": {}
-                        },
                         "workflowVariable": "",
-                        "label": "Groups requested",
                         "id": "groupsRequested",
                         "value": "",
                         "readonlyLabel": ""
