@@ -370,7 +370,7 @@
                                     "addEmptyOption": "",
                                     "groupingColumn": "",
                                     "requestType": "post",
-                                    "jsonUrl": "https://joget-workflow-dev.stack.dev.risa.gov.rw/jw/web/json/directory/admin/group/list",
+                                    "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/directory/admin/group/list",
                                     "multirowBaseObject": "data",
                                     "emptyDependencyValueCheck": "",
                                     "params": [],
@@ -379,7 +379,7 @@
                                     "copyCookies": "true",
                                     "cacheInterval": "",
                                     "debugMode": "true",
-                                    "idColumn": "in"
+                                    "idColumn": "id"
                                 }
                             },
                             "multiple": "",
