@@ -77,12 +77,13 @@
             }],
             "properties": {
                 "hide": "",
+                "permissionComment": "",
                 "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {
                     "hide": "yes",
                     "permissionDeny": ""
                 }},
                 "permission": {
-                    "className": "",
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
                     "properties": {}
                 },
                 "comment": "",
