@@ -9,10 +9,7 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {
-                            "ec93b6f1-7664-3666-bd95-78072bff4910": {},
-                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
-                        },
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
                         "keyName": "",
                         "label": "Create Your Account",
                         "redirectTarget": "",
@@ -36,10 +33,7 @@
                         "appFilter": "all",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
-                        "permission_rules": {
-                            "ec93b6f1-7664-3666-bd95-78072bff4910": {},
-                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
-                        },
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
                         "showPopup": "false",
                         "label": "Inbox",
                         "rowCount": "false",
@@ -49,10 +43,7 @@
                 }
             ],
             "properties": {
-                "permission_rules": {
-                    "ec93b6f1-7664-3666-bd95-78072bff4910": {},
-                    "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
-                },
+                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
                 "id": "category-BF45AFCEDC934F059FE34467CA495FF6",
                 "label": "User"
             }
@@ -64,10 +55,7 @@
                 "properties": {
                     "cacheAllLinks": "",
                     "customHeader": "",
-                    "permission_rules": {
-                        "ec93b6f1-7664-3666-bd95-78072bff4910": {},
-                        "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
-                    },
+                    "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
                     "keyName": "",
                     "customFooter": "",
                     "label": "Account Requests",
@@ -85,23 +73,12 @@
                 }
             }],
             "properties": {
-                "hide": "",
+                "hide": "yes",
                 "permissionComment": "",
-                "permission_rules": {
-                    "ec93b6f1-7664-3666-bd95-78072bff4910": {
-                        "hide": "",
-                        "permissionComment": "",
-                        "permission": {
-                            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-                            "properties": {}
-                        },
-                        "permissionDeny": ""
-                    },
-                    "053faca4-7ed7-9e1c-e246-d3eebc82470e": {
-                        "hide": "",
-                        "permissionDeny": ""
-                    }
-                },
+                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {
+                    "hide": "",
+                    "permissionDeny": ""
+                }},
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -128,24 +105,14 @@
         "noPermissionMessage": "",
         "userviewId": "su",
         "hideThisUserviewInAppCenter": "",
-        "permission_rules": [
-            {
-                "permission_key": "053faca4-7ed7-9e1c-e246-d3eebc82470e",
-                "permission": {
-                    "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
-                    "properties": {}
-                },
-                "permission_name": "Logged in"
+        "permission_rules": [{
+            "permission_key": "053faca4-7ed7-9e1c-e246-d3eebc82470e",
+            "permission": {
+                "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                "properties": {}
             },
-            {
-                "permission_key": "ec93b6f1-7664-3666-bd95-78072bff4910",
-                "permission": {
-                    "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
-                    "properties": {}
-                },
-                "permission_name": "Anonymous"
-            }
-        ],
+            "permission_name": "Admin"
+        }],
         "userview_thumbnail": "#appResource.user-account-login-icon.png#",
         "userview_category": "",
         "theme": {
@@ -217,11 +184,8 @@
             }
         },
         "permission": {
-            "className": "org.joget.apps.userview.lib.UserPermission",
-            "properties": {
-                "allowedUsernames": "wiemann.thomas",
-                "orgId": ""
-            }
+            "className": "",
+            "properties": {}
         },
         "userviewName": "Account Creation App"
     }}
