@@ -89,11 +89,11 @@
                 "permissionComment": "",
                 "permission_rules": {
                     "ec93b6f1-7664-3666-bd95-78072bff4910": {
-                        "hide": "yes",
+                        "hide": "",
                         "permissionDeny": ""
                     },
                     "053faca4-7ed7-9e1c-e246-d3eebc82470e": {
-                        "hide": "yes",
+                        "hide": "",
                         "permissionDeny": ""
                     }
                 },
