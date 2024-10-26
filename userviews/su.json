@@ -9,7 +9,7 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {}},
+                        "permission_rules": {"ec93b6f1-7664-3666-bd95-78072bff4910": {}},
                         "keyName": "",
                         "label": "Create Your Account",
                         "redirectTarget": "",
@@ -33,10 +33,7 @@
                         "appFilter": "all",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
-                        "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {
-                            "permissionHidden": "",
-                            "permissionDeny": ""
-                        }},
+                        "permission_rules": {"ec93b6f1-7664-3666-bd95-78072bff4910": {}},
                         "showPopup": "false",
                         "label": "Inbox",
                         "rowCount": "false",
@@ -46,7 +43,7 @@
                 }
             ],
             "properties": {
-                "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {}},
+                "permission_rules": {"ec93b6f1-7664-3666-bd95-78072bff4910": {}},
                 "id": "category-BF45AFCEDC934F059FE34467CA495FF6",
                 "label": "User"
             }
@@ -58,7 +55,7 @@
                 "properties": {
                     "cacheAllLinks": "",
                     "customHeader": "",
-                    "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {}},
+                    "permission_rules": {"ec93b6f1-7664-3666-bd95-78072bff4910": {}},
                     "keyName": "",
                     "customFooter": "",
                     "label": "Account Requests",
@@ -78,12 +75,9 @@
             "properties": {
                 "hide": "",
                 "permissionComment": "",
-                "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {
-                    "hide": "yes",
-                    "permissionDeny": ""
-                }},
+                "permission_rules": {"ec93b6f1-7664-3666-bd95-78072bff4910": {}},
                 "permission": {
-                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "className": "",
                     "properties": {}
                 },
                 "comment": "",
@@ -109,7 +103,7 @@
         "userviewId": "su",
         "hideThisUserviewInAppCenter": "",
         "permission_rules": [{
-            "permission_key": "b97ea033-125e-33bc-6d52-d924be00f160",
+            "permission_key": "ec93b6f1-7664-3666-bd95-78072bff4910",
             "permission": {
                 "className": "",
                 "properties": []
