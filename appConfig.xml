@@ -24,14 +24,9 @@
       <environmentVariable>
          <id>maxAccountRequestID</id>
          <appId>AccCreation</appId>
+         <appVersion>1</appVersion>
          <value>0</value>
          <remarks></remarks>
-      </environmentVariable>
-      <environmentVariable>
-         <id>SignupNo</id>
-         <appId>AccCreation</appId>
-         <appVersion>1</appVersion>
-         <value>341</value>
       </environmentVariable>
       <environmentVariable>
          <id>url</id>
