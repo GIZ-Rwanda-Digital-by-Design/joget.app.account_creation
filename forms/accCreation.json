@@ -115,13 +115,39 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.PasswordField",
+                    "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
+                        "controlField": "",
                         "readonly": "",
-                        "size": "",
-                        "maxlength": "",
-                        "id": "passwordConfirm",
-                        "label": "Confirm password",
+                        "size": "10",
+                        "optionsBinder": {
+                            "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                            "properties": {
+                                "headers": [],
+                                "addEmptyOption": "",
+                                "groupingColumn": "",
+                                "requestType": "post",
+                                "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/directory/admin/group/list",
+                                "multirowBaseObject": "data",
+                                "emptyDependencyValueCheck": "",
+                                "params": [],
+                                "postMethod": "",
+                                "labelColumn": "name",
+                                "copyCookies": "true",
+                                "cacheInterval": "",
+                                "debugMode": "true",
+                                "idColumn": "id"
+                            }
+                        },
+                        "multiple": "true",
+                        "options": [],
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "label": "Groups requested",
+                        "id": "groupsRequested",
                         "value": "",
                         "readonlyLabel": ""
                     }
