@@ -20,16 +20,6 @@
                             "label": "Actioned by",
                             "value": "<strong>#form.account_signup.ActionBy# on #form.account_signup.ActionDate#<\/strong><br/>"
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "requiredSanitize": "",
-                            "autoPopulate": "",
-                            "label": "",
-                            "id": "field15",
-                            "value": "#request.scheme#://#request.serverName##request.contextPath#/web/json/directory/admin/group/list"
-                        }
                     }
                 ],
                 "className": "org.joget.apps.form.model.Column",
