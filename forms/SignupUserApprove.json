@@ -370,7 +370,7 @@
                                     "addEmptyOption": "true",
                                     "groupingColumn": "",
                                     "requestType": "",
-                                    "jsonUrl": "#request.scheme#://#request.serverName##request.contextPath#/web/json/directory/admin/group/list",
+                                    "jsonUrl": "https://joget-workflow-dev.stack.dev.risa.gov.rw/jw/web/json/directory/admin/group/list",
                                     "labelColumn": "name",
                                     "multirowBaseObject": "data",
                                     "emptyDependencyValueCheck": "",
