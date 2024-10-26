@@ -355,6 +355,42 @@
                             "value": "",
                             "readonlyLabel": ""
                         }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "readonly": "",
+                            "size": "",
+                            "optionsBinder": {
+                                "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                                "properties": {
+                                    "headers": [],
+                                    "addEmptyOption": "true",
+                                    "groupingColumn": "",
+                                    "requestType": "",
+                                    "jsonUrl": "web/json/directory/admin/group/list",
+                                    "labelColumn": "name",
+                                    "multirowBaseObject": "data",
+                                    "emptyDependencyValueCheck": "",
+                                    "copyCookies": "",
+                                    "cacheInterval": "",
+                                    "debugMode": "",
+                                    "idColumn": "in"
+                                }
+                            },
+                            "multiple": "",
+                            "options": [],
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "workflowVariable": "",
+                            "label": "Select Box",
+                            "id": "field14",
+                            "value": "",
+                            "readonlyLabel": ""
+                        }
                     }
                 ],
                 "className": "org.joget.apps.form.model.Column",
