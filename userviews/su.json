@@ -88,7 +88,8 @@
                 },
                 "comment": "",
                 "label": "<i class=\"fab fa-affiliatetheme\"><\/i> Admin",
-                "id": "category-3C11253059AB4D17BD9E9F1D24DC0EF1"
+                "id": "category-3C11253059AB4D17BD9E9F1D24DC0EF1",
+                "permissionDeny": ""
             }
         }
     ],
