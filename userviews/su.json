@@ -10,7 +10,7 @@
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
                         "keyName": "",
-                        "label": "Create Your Account",
+                        "label": "<i class=\"fab fa-accessible-icon\"><\/i> Create Your Account",
                         "redirectTarget": "",
                         "enableOffline": "",
                         "customId": "createAccount",
@@ -97,12 +97,12 @@
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
                         "orgId": "",
-                        "allowedGroupIds": "account_admin"
+                        "allowedGroupIds": ""
                     }
                 },
                 "comment": "",
                 "id": "category-75C87D107CAA473AB747A2743F40F5AE",
-                "label": "Admin"
+                "label": "<i class=\"fas fa-database\"><\/i> Admin"
             }
         }
     ],
