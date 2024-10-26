@@ -26,6 +26,11 @@
                         <BasicType Type="STRING"/>
                     </DataType>
                 </DataField>
+                <DataField Id="groupCounter" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
             </DataFields>
             <Activities>
                 <Activity Id="route1">
@@ -83,7 +88,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="987.9755783081055,22.105975161132818"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1241.96875,16.09375"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="CreateUserRoleRecord" Name="Create UserRole Record">
@@ -113,7 +118,17 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="823.9810104370117,20.489130983886724"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="986.96875,18.484375"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="loopOverGroups" Name="Loop over the groups">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>Approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="808.015625,158.21875"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -145,21 +160,28 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="CreateUserRoleRecord" Id="transition6" To="assignUserGroup">
+                <Transition From="assignUserGroup" Id="transition8" To="EmailApproved">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="assignUserGroup" Id="transition8" To="EmailApproved">
+                <Transition From="CreateUserRoleRecord" Id="transition10" To="loopOverGroups">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="loopOverGroups" Id="transition11" To="assignUserGroup">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="signup_anonomyous;Approver"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailRejected,X_OFFSET=663,Y_OFFSET=118,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailApproved,X_OFFSET=1188,Y_OFFSET=33,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailApproved,X_OFFSET=1565,Y_OFFSET=37,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=signup_anonomyous,CONNECTING_ACTIVITY_ID=EmailApprover,X_OFFSET=63,Y_OFFSET=69.97916700000002,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
