@@ -9,6 +9,7 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
+                        "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {}},
                         "keyName": "",
                         "label": "Create Your Account",
                         "redirectTarget": "",
@@ -32,6 +33,7 @@
                         "appFilter": "all",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
+                        "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {}},
                         "showPopup": "false",
                         "label": "Inbox",
                         "rowCount": "false",
@@ -41,6 +43,7 @@
                 }
             ],
             "properties": {
+                "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {}},
                 "id": "category-BF45AFCEDC934F059FE34467CA495FF6",
                 "label": "User"
             }
@@ -55,6 +58,7 @@
                         "list-customFooter": "",
                         "cacheAllLinks": "",
                         "assignment-customHeader": "",
+                        "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {}},
                         "assignment-customFooter": "",
                         "label": "Accounts to be approved",
                         "enableOffline": "",
@@ -74,6 +78,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
+                        "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List of new Accounts",
@@ -93,6 +98,10 @@
             ],
             "properties": {
                 "hide": "",
+                "permission_rules": {"b97ea033-125e-33bc-6d52-d924be00f160": {
+                    "hide": "",
+                    "permissionDeny": "true"
+                }},
                 "permission": {
                     "className": "org.joget.apps.userview.lib.GroupPermission",
                     "properties": {
@@ -117,8 +126,17 @@
     "setting": {"properties": {
         "__": "",
         "userviewDescription": "",
+        "noPermissionMessage": "",
         "userviewId": "su",
         "hideThisUserviewInAppCenter": "",
+        "permission_rules": [{
+            "permission_key": "b97ea033-125e-33bc-6d52-d924be00f160",
+            "permission": {
+                "className": "",
+                "properties": []
+            },
+            "permission_name": "Unnamed"
+        }],
         "userview_thumbnail": "#appResource.user-account-login-icon.png#",
         "userview_category": "",
         "theme": {
@@ -160,7 +178,7 @@
             }
         },
         "permission": {
-            "className": "",
+            "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
             "properties": {}
         },
         "userviewName": "Account Creation App"
