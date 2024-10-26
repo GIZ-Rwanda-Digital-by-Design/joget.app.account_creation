@@ -362,7 +362,7 @@
                         "properties": {
                             "controlField": "",
                             "readonly": "",
-                            "size": "",
+                            "size": "10",
                             "optionsBinder": {
                                 "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
                                 "properties": {
@@ -382,15 +382,15 @@
                                     "idColumn": "id"
                                 }
                             },
-                            "multiple": "",
+                            "multiple": "true",
                             "options": [],
                             "validator": {
                                 "className": "",
                                 "properties": {}
                             },
                             "workflowVariable": "",
-                            "label": "Select Box",
-                            "id": "field14",
+                            "label": "Groups requested",
+                            "id": "groupsRequested",
                             "value": "",
                             "readonlyLabel": ""
                         }
