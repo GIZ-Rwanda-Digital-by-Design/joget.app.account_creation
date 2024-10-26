@@ -121,14 +121,14 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="986.96875,18.484375"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="loopOverGroups" Name="Loop over the groups">
+                <Activity Id="loopOverGroupsZero" Name="Set Loop Counter for Groups to 0">
                     <Implementation>
                         <Tool Id="default_application"/>
                     </Implementation>
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="808.015625,158.21875"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="62.015625,208.21875"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -155,23 +155,23 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="EmailApprover" Id="transition7" To="Approve">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
                 <Transition From="assignUserGroup" Id="transition8" To="EmailApproved">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="CreateUserRoleRecord" Id="transition10" To="loopOverGroups">
+                <Transition From="CreateUserRoleRecord" Id="transition10" To="assignUserGroup">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="EmailApprover" Id="transition11" To="loopOverGroupsZero">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="loopOverGroups" Id="transition11" To="assignUserGroup">
+                <Transition From="loopOverGroupsZero" Id="transition12" To="Approve">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>

@@ -60,10 +60,10 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>signup::loopOverGroups</string>
+               <string>signup::loopOverGroupsZero</string>
                <packageActivityPlugin>
                   <processDefId>signup</processDefId>
-                  <activityDefId>loopOverGroups</activityDefId>
+                  <activityDefId>loopOverGroupsZero</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
                   <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.WorkflowVariableUpdateTool&quot;,&quot;properties&quot;:{&quot;workflowVarMapping&quot;:[{&quot;variable&quot;:&quot;groupCounter&quot;,&quot;changeValueTo&quot;:&quot;0&quot;}]}}]}</pluginProperties>
                </packageActivityPlugin>
