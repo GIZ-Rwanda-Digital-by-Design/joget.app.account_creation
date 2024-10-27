@@ -142,7 +142,7 @@
                                 "labelColumn": "name",
                                 "copyCookies": "true",
                                 "cacheInterval": "",
-                                "debugMode": "true",
+                                "debugMode": "",
                                 "idColumn": "id"
                             }
                         },
