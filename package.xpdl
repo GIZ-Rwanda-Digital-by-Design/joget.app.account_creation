@@ -154,6 +154,16 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="849.015625,194.15625"/>
                     </ExtendedAttributes>
                 </Activity>
+                <Activity Id="updateGroupCounter" Name="Update Group Counter">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>Approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1334.03125,28.515625"/>
+                    </ExtendedAttributes>
+                </Activity>
             </Activities>
             <Transitions>
                 <Transition From="route1" Id="transition1" To="CreateUserRecord">
@@ -176,12 +186,6 @@
                 <Transition From="CreateUserRecord" Id="transition5" To="CreateUserRoleRecord">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="assignUserGroup" Id="transition8" To="EmailApproved">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
                 <Transition From="EmailApprover" Id="transition11" To="loopOverGroupsZero">
@@ -212,6 +216,16 @@
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="assignUserGroup" Id="transition15" To="updateGroupCounter">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="updateGroupCounter" Id="transition16" To="EmailApproved">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
             </Transitions>
