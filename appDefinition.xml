@@ -69,15 +69,6 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>signup::loopOverGroups</string>
-               <packageActivityPlugin>
-                  <processDefId>signup</processDefId>
-                  <activityDefId>loopOverGroups</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.WorkflowVariableUpdateTool&quot;,&quot;properties&quot;:{&quot;workflowVarMapping&quot;:[{&quot;variable&quot;:&quot;groupCounter&quot;,&quot;changeValueTo&quot;:&quot;0&quot;}]}}]}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>signup::EmailApproved</string>
                <packageActivityPlugin>
                   <processDefId>signup</processDefId>
@@ -114,6 +105,15 @@
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>signup::Approver</string>
+               <packageParticipant>
+                  <processDefId>signup</processDefId>
+                  <participantId>Approver</participantId>
+                  <type>user</type>
+                  <value>wiemann.thomas</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
