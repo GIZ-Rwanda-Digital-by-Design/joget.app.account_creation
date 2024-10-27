@@ -123,7 +123,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1345.9583740234375,29.437510505859365"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1296.9583740234375,38.437510505859365"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="loopOverGroupsZero" Name="Set Loop Counter for Groups to 0">
