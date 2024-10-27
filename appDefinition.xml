@@ -30,6 +30,17 @@
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
+            <entry>
+               <string>signup::activity1</string>
+               <packageActivityForm>
+                  <processDefId>signup</processDefId>
+                  <activityDefId>activity1</activityDefId>
+                  <formId></formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
          </packageActivityFormMap>
          <packageActivityPluginMap>
             <entry>

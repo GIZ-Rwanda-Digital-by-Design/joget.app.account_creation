@@ -19,7 +19,7 @@
          <id>SignupNo</id>
          <appId>AccCreation</appId>
          <appVersion>2</appVersion>
-         <value>6</value>
+         <value>9</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>

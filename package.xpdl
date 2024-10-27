@@ -145,6 +145,7 @@
                                 <TransitionRefs>
                                     <TransitionRef Id="transition13"/>
                                     <TransitionRef Id="transition14"/>
+                                    <TransitionRef Id="transition19"/>
                                 </TransitionRefs>
                             </Split>
                         </TransitionRestriction>
@@ -190,6 +191,16 @@
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1511.03125,150.515625"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="activity1" Name="Activity 1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <Performer>Approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="900,311.5208540117187"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -267,6 +278,16 @@
                     </ExtendedAttributes>
                 </Transition>
                 <Transition From="checkCounter" Id="transition16" Name="reject" To="doNothing">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="groupUpdateRequired" Id="transition19" To="activity1">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="activity1" Id="transition20" To="EmailApproved">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
