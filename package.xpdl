@@ -31,9 +31,14 @@
                         <BasicType Type="STRING"/>
                     </DataType>
                 </DataField>
+                <DataField Id="group" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
             </DataFields>
             <Activities>
-                <Activity Id="route1">
+                <Activity Id="approvalDecision" Name="Approval Decision">
                     <Route/>
                     <Performer>Approver</Performer>
                     <TransitionRestrictions>
@@ -86,14 +91,9 @@
                         <Tool Id="default_application"/>
                     </Implementation>
                     <Performer>Approver</Performer>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Join Type="XOR"/>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1329.96875,313.09375"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1260.9583740234375,333.0833540117187"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="CreateUserRoleRecord" Name="Create UserRole Record">
@@ -103,7 +103,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="664.986442565918,20.855975161132818"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="672.9791870117188,15.833338752929677"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="EmailApprover" Name="Email Approver">
@@ -123,7 +123,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1075.96875,24.484375"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1345.9583740234375,29.437510505859365"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="loopOverGroupsZero" Name="Set Loop Counter for Groups to 0">
@@ -141,6 +141,7 @@
                     <Performer>Approver</Performer>
                     <TransitionRestrictions>
                         <TransitionRestriction>
+                            <Join Type="XOR"/>
                             <Split Type="XOR">
                                 <TransitionRefs>
                                     <TransitionRef Id="transition13"/>
@@ -154,61 +155,23 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="849.015625,194.15625"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="updateGroupCounter" Name="Update Group Counter">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>Approver</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1446.03125,20.515625"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="checkCounter" Name="Check Counter">
-                    <Route/>
-                    <Performer>Approver</Performer>
-                    <TransitionRestrictions>
-                        <TransitionRestriction>
-                            <Split Type="XOR">
-                                <TransitionRefs>
-                                    <TransitionRef Id="transition18"/>
-                                    <TransitionRef Id="transition16"/>
-                                </TransitionRefs>
-                            </Split>
-                        </TransitionRestriction>
-                    </TransitionRestrictions>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1362.96875,161.484375"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="doNothing" Name="doNothing">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>Approver</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1511.03125,150.515625"/>
-                    </ExtendedAttributes>
-                </Activity>
             </Activities>
             <Transitions>
-                <Transition From="route1" Id="transition1" To="CreateUserRecord">
+                <Transition From="approvalDecision" Id="transition1" To="CreateUserRecord">
                     <Condition Type="CONDITION">Status==='Approved'</Condition>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="route1" Id="transition3" To="EmailRejected">
+                <Transition From="approvalDecision" Id="transition3" To="EmailRejected">
                     <Condition Type="OTHERWISE"/>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="Approve" Id="transition4" To="route1">
+                <Transition From="Approve" Id="transition4" To="approvalDecision">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
@@ -248,27 +211,10 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="assignUserGroup" Id="transition15" To="updateGroupCounter">
+                <Transition From="assignUserGroup" Id="transition15" To="groupUpdateRequired">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="updateGroupCounter" Id="transition17" To="checkCounter">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="checkCounter" Id="transition18" Name="approve" To="EmailApproved">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="checkCounter" Id="transition16" Name="reject" To="doNothing">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
             </Transitions>
@@ -277,7 +223,6 @@
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailRejected,X_OFFSET=822,Y_OFFSET=327.00001050585934,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailApproved,X_OFFSET=1564,Y_OFFSET=334,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=signup_anonomyous,CONNECTING_ACTIVITY_ID=EmailApprover,X_OFFSET=106,Y_OFFSET=58.96875,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=doNothing,X_OFFSET=1723.96875,Y_OFFSET=175.484375,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
     </WorkflowProcesses>
