@@ -234,13 +234,13 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="groupUpdateRequired" Id="transition13" To="assignUserGroup">
+                <Transition From="groupUpdateRequired" Id="transition13" Name="groupUpdate" To="assignUserGroup">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="groupUpdateRequired" Id="transition14" To="EmailApproved">
+                <Transition From="groupUpdateRequired" Id="transition14" Name="noGroupUpdate" To="EmailApproved">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>

@@ -30,17 +30,6 @@
                   <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
-            <entry>
-               <string>signup::activity1</string>
-               <packageActivityForm>
-                  <processDefId>signup</processDefId>
-                  <activityDefId>activity1</activityDefId>
-                  <formId></formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
          </packageActivityFormMap>
          <packageActivityPluginMap>
             <entry>
@@ -89,21 +78,12 @@
                </packageActivityPlugin>
             </entry>
             <entry>
-               <string>signup::loopOverGroups</string>
-               <packageActivityPlugin>
-                  <processDefId>signup</processDefId>
-                  <activityDefId>loopOverGroups</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.tutorial.WorkflowVariableUpdateTool&quot;,&quot;properties&quot;:{&quot;workflowVarMapping&quot;:[{&quot;variable&quot;:&quot;groupCounter&quot;,&quot;changeValueTo&quot;:&quot;0&quot;}]}}]}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
                <string>signup::checkCounter</string>
                <packageActivityPlugin>
                   <processDefId>signup</processDefId>
                   <activityDefId>checkCounter</activityDefId>
                   <pluginName>org.joget.apps.app.lib.BeanShellDecisionPlugin</pluginName>
-                  <pluginProperties>{&quot;script&quot;:&quot;import org.joget.workflow.model.DecisionResult;\n \n//Transition Name to go to\nString transitionApprove = \&quot;approve\&quot;;\nString transitionReject = \&quot;reject\&quot;;\n \n//Workflow variable ID to set\nString workflowVariable = \&quot;groupCounter\&quot;;\n \nDecisionResult result = new DecisionResult();\n \n/* Bean Shell Decision supports hash variable, and has access to the process instance context. */\nSystem.out.println(\&quot;Value of \\&apos;status\\&apos; wf-var in this process instance is: \&quot; + \&quot;#variable.status#\&quot;);\n \nif (\&quot;1\&quot;.equalsIgnoreCase(\&quot;#variable.groupCounter#\&quot;)) {\n    result.addTransition(transitionApprove);\n    result.setVariable(workflowVariable, \&quot;ApprovedByBeanShellDecision\&quot;);\n} else {\n    result.addTransition(transitionReject);\n    result.setVariable(workflowVariable, \&quot;RejectedByBeanShellDecision\&quot;);\n}\n \n/* For use cases requiring multiple node routing, do set boolean below as true. */\n//result.setIsAndSplit(true);\n \nreturn result;&quot;}</pluginProperties>
+                  <pluginProperties>{&quot;script&quot;:&quot;import org.joget.workflow.model.DecisionResult;\nimport org.joget.commons.util.LogUtil;\n\n/*\n\tLogUtil.info(\&quot;########  Test Class Name ###########\&quot;, data.get(\&quot;data\&quot;).getClass().getName());\n\tLogUtil.info(\&quot;########  Test is Array #############\&quot;, data.get(\&quot;data\&quot;).getClass().isArray().toString());\n\tLogUtil.info(\&quot;########  Test Length ###############\&quot;, data.get(\&quot;data\&quot;).length().toString());\n*/\n\n\n//Transition Name to go to\nString transitionApprove = \&quot;approve\&quot;;\nString transitionReject = \&quot;reject\&quot;;\n \n//Workflow variable ID to set\nString workflowVariable = \&quot;groupCounter\&quot;;\n \nDecisionResult result = new DecisionResult();\n \n/* Bean Shell Decision supports hash variable, and has access to the process instance context. */\n/* System.out.println(\&quot;Value of \\&apos;status\\&apos; wf-var in this process instance is: \&quot; + \&quot;#variable.status#\&quot;); */\n\nLogUtil.info(\&quot;Value of \\&apos;status\\&apos; wf-var in this process instance is: \&quot;, \&quot;#variable.status#\&quot;);\n\nif (\&quot;1\&quot;.equalsIgnoreCase(\&quot;#variable.groupCounter#\&quot;)) {\n    result.addTransition(transitionApprove);\n    result.setVariable(workflowVariable, \&quot;ApprovedByBeanShellDecision\&quot;);\n} else {\n    result.addTransition(transitionReject);\n    result.setVariable(workflowVariable, \&quot;RejectedByBeanShellDecision\&quot;);\n}\n \n/* For use cases requiring multiple node routing, do set boolean below as true. */\n//result.setIsAndSplit(true);\n \nreturn result;&quot;}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -140,6 +120,15 @@
                   <activityDefId>EmailApprover</activityDefId>
                   <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
                   <pluginProperties>{&quot;cc&quot;:&quot;&quot;,&quot;toSpecific&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;icsAttachement&quot;:&quot;&quot;,&quot;subject&quot;:&quot;A new user has signed up and needs your approval&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;retryCount&quot;:&quot;&quot;,&quot;toParticipantId&quot;:&quot;Approver&quot;,&quot;message&quot;:&quot;Hi admin\n\nA new user &apos;#form.account_signup.username#&apos; has signed up and needs your approval.\n\nClick &lt;a href=\&quot;#envVariable.URL#\&quot;&gt;here&lt;\/a&gt; to approve/reject this request.\n\nThis is a computer generated email.&quot;,&quot;p12&quot;:&quot;&quot;,&quot;security&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;storepass&quot;:&quot;&quot;,&quot;port&quot;:&quot;&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;files&quot;:[],&quot;alias&quot;:&quot;&quot;,&quot;from&quot;:&quot;&quot;,&quot;retryInterval&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;username&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>signup::groupUpdateRequired</string>
+               <packageActivityPlugin>
+                  <processDefId>signup</processDefId>
+                  <activityDefId>groupUpdateRequired</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.BeanShellDecisionPlugin</pluginName>
+                  <pluginProperties>{&quot;script&quot;:&quot;import org.joget.workflow.model.DecisionResult;\nimport org.joget.commons.util.LogUtil;\n\n/*\n\tLogUtil.info(\&quot;########  Test Class Name ###########\&quot;, data.get(\&quot;data\&quot;).getClass().getName());\n\tLogUtil.info(\&quot;########  Test is Array #############\&quot;, data.get(\&quot;data\&quot;).getClass().isArray().toString());\n\tLogUtil.info(\&quot;########  Test Length ###############\&quot;, data.get(\&quot;data\&quot;).length().toString());\n*/\n\n\n//Transition Name to go to\nString transitionApprove = \&quot;noGroupUpdate\&quot;;\nString transitionReject = \&quot;groupUpdate\&quot;;\n \n//Workflow variable ID to set\nString workflowVariable = \&quot;groupCounter\&quot;;\n \nDecisionResult result = new DecisionResult();\n \n/* Bean Shell Decision supports hash variable, and has access to the process instance context. */\n/* System.out.println(\&quot;Value of \\&apos;status\\&apos; wf-var in this process instance is: \&quot; + \&quot;#variable.status#\&quot;); */\n\nLogUtil.info(\&quot;Value of \\&apos;status\\&apos; wf-var in this process instance is: \&quot;, \&quot;#variable.groupCounter#\&quot;);\n\nif (\&quot;0\&quot;.equalsIgnoreCase(\&quot;#variable.groupCounter#\&quot;)) {\n    result.addTransition(transitionApprove);\n    result.setVariable(workflowVariable, \&quot;noGroupUpdate\&quot;);\n} else {\n    result.addTransition(transitionReject);\n    result.setVariable(workflowVariable, \&quot;groupUpdate\&quot;);\n}\n \n/* For use cases requiring multiple node routing, do set boolean below as true. */\n//result.setIsAndSplit(true);\n \nreturn result;&quot;}</pluginProperties>
                </packageActivityPlugin>
             </entry>
          </packageActivityPluginMap>
