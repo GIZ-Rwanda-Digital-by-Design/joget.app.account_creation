@@ -145,7 +145,6 @@
                                 <TransitionRefs>
                                     <TransitionRef Id="transition13"/>
                                     <TransitionRef Id="transition14"/>
-                                    <TransitionRef Id="transition19"/>
                                 </TransitionRefs>
                             </Split>
                         </TransitionRestriction>
@@ -191,16 +190,6 @@
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1511.03125,150.515625"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="tool9" Name="Tool 9">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>Approver</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="900,323.5208540117187"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -278,16 +267,6 @@
                     </ExtendedAttributes>
                 </Transition>
                 <Transition From="checkCounter" Id="transition16" Name="reject" To="doNothing">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="groupUpdateRequired" Id="transition19" To="tool9">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="tool9" Id="transition20" To="EmailApproved">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
