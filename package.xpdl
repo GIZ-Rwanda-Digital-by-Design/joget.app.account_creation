@@ -161,7 +161,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1318.03125,21.515625"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1323.03125,24.515625"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
