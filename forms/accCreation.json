@@ -73,24 +73,27 @@
                 {
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
-                        "encryption": "",
-                        "readonly": "",
-                        "size": "50",
+                        "requiredSanitize": "",
                         "maxlength": "",
                         "validator": {
                             "className": "org.joget.apps.form.lib.DefaultValidator",
                             "properties": {
-                                "custom-regex": "",
-                                "message": "",
                                 "type": "email",
+                                "message": "",
                                 "mandatory": "true"
                             }
                         },
+                        "label": "eMail",
+                        "encryption": "",
+                        "readonly": "",
+                        "size": "50",
                         "workflowVariable": "",
+                        "style": "",
                         "id": "email",
-                        "label": "Email",
+                        "placeholder": "",
                         "value": "",
-                        "readonlyLabel": ""
+                        "readonlyLabel": "",
+                        "storeNumeric": ""
                     }
                 },
                 {
