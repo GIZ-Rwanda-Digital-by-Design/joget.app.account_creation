@@ -139,14 +139,14 @@
       <appResource>
          <id>user-account-login-icon.png</id>
          <appId>AccCreation</appId>
-         <appVersion>2</appVersion>
+         <appVersion>1</appVersion>
          <filesize>3978</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>user-account-login-icon.svg</id>
          <appId>AccCreation</appId>
-         <appVersion>2</appVersion>
+         <appVersion>1</appVersion>
          <filesize>2085</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.user-account-login-icon.svg#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
