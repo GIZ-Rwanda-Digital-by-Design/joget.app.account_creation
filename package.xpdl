@@ -108,7 +108,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="672.9791870117188,15.833338752929677"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="692.9791870117188,16.812510505859365"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="EmailApprover" Name="Email Approver">
@@ -156,7 +156,17 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="849.015625,194.15625"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="928,203.14585401171874"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="tool7" Name="Tool 7">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>Approver</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="899.0208740234375,26.062510505859365"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -197,12 +207,6 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="CreateUserRoleRecord" Id="transition10" To="groupUpdateRequired">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
                 <Transition From="groupUpdateRequired" Id="transition13" Name="groupUpdate" To="assignUserGroup">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
@@ -216,6 +220,17 @@
                     </ExtendedAttributes>
                 </Transition>
                 <Transition From="assignUserGroup" Id="transition15" To="EmailApproved">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="CreateUserRoleRecord" Id="transition16" To="tool7">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="tool7" Id="transition17" To="groupUpdateRequired">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
