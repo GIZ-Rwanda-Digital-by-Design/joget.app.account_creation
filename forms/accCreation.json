@@ -83,7 +83,7 @@
                                 "mandatory": "true"
                             }
                         },
-                        "label": "eMail",
+                        "label": "Email",
                         "encryption": "",
                         "readonly": "",
                         "size": "50",
