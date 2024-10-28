@@ -159,14 +159,14 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="928,203.14585401171874"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="tool7" Name="Tool 7">
+                <Activity Id="extractGroup" Name="Extract the group from the Array">
                     <Implementation>
                         <Tool Id="default_application"/>
                     </Implementation>
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="899.0208740234375,26.062510505859365"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="701,190.06251050585936"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -225,12 +225,12 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="CreateUserRoleRecord" Id="transition16" To="tool7">
+                <Transition From="CreateUserRoleRecord" Id="transition16" To="extractGroup">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="tool7" Id="transition17" To="groupUpdateRequired">
+                <Transition From="extractGroup" Id="transition17" To="groupUpdateRequired">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
