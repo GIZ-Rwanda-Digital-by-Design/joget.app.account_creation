@@ -11,10 +11,14 @@
    <environmentVariableList>
       <environmentVariable>
          <id>AppName</id>
+         <appId>AccCreation</appId>
+         <appVersion>2</appVersion>
          <value>Account Creation App</value>
       </environmentVariable>
       <environmentVariable>
          <id>Approver</id>
+         <appId>AccCreation</appId>
+         <appVersion>2</appVersion>
          <value>admin</value>
       </environmentVariable>
       <environmentVariable>
@@ -25,10 +29,14 @@
       </environmentVariable>
       <environmentVariable>
          <id>SignupNo</id>
+         <appId>AccCreation</appId>
+         <appVersion>2</appVersion>
          <value>33</value>
       </environmentVariable>
       <environmentVariable>
          <id>url</id>
+         <appId>AccCreation</appId>
+         <appVersion>2</appVersion>
          <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/accountsToBeApproved</value>
       </environmentVariable>
    </environmentVariableList>
