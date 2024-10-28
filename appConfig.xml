@@ -1,0 +1,37 @@
+<appDefinition>
+   <appId>AccCreation</appId>
+   <id>AccCreation</id>
+   <version></version>
+   <name>Account Creation App</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>maxAccountRequestID</id>
+         <appId>AccCreation</appId>
+         <appVersion>2</appVersion>
+         <value>0</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>SignupNo</id>
+         <appId>AccCreation</appId>
+         <appVersion>2</appVersion>
+         <value>13</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>url</id>
+         <appId>AccCreation</appId>
+         <appVersion>2</appVersion>
+         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/_ja_inbox</value>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>pHWYEXz7oylFy8pxP6yrjSGqO0G4h/ey1Ki24yETEJyv38yletVy8fKWdtQS9XX9ROBcrWdKG0c=</license>
+   <description>Version 2 Account Creation App with Groups</description>
+</appDefinition>

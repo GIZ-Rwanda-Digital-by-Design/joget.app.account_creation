@@ -1,0 +1,220 @@
+{
+    "className": "org.joget.apps.userview.model.Userview",
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "keyName": "",
+                        "label": "Create Your Account",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "customId": "createAccount",
+                        "messageShowAfterComplete": "Thank you for signing up. You will be notified via email when your Joget Account is approved.",
+                        "userviewCacheDuration": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "CA3049E10BFC4E1C854FD263255C8349",
+                        "processDefId": "signup",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "all",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "showPopup": "false",
+                        "label": "Inbox",
+                        "rowCount": "false",
+                        "id": "CDD6814D9D23458AA8A02A5566F95DDE",
+                        "buttonPosition": "bottomLeft"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "category-BF45AFCEDC934F059FE34467CA495FF6",
+                "label": "<i class=\"far fa-address-book\"><\/i> User"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "assignment-customHeader": "",
+                        "assignment-customFooter": "",
+                        "label": "Process Inbox",
+                        "enableOffline": "",
+                        "customId": "Inbox",
+                        "buttonPosition": "bothLeft",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "processId": "signup",
+                        "showPopup": "",
+                        "rowCount": "true",
+                        "id": "BACAF27891904AE3739BD3D2469CAF3D",
+                        "list-customHeader": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Account Requests",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "accCreation",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "true",
+                        "id": "B2FF94272205462FA1EDE118613316F3"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "yes",
+                "permissionComment": "",
+                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {
+                    "hide": "",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "<i class=\"fab fa-affiliatetheme\"><\/i> Admin",
+                "id": "category-3C11253059AB4D17BD9E9F1D24DC0EF1",
+                "permissionDeny": ""
+            }
+        }
+    ],
+    "properties": {
+        "logoutText": "Logout",
+        "welcomeMessage": "",
+        "name": "Account Creation App",
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "su"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "userviewDescription": "",
+        "noPermissionMessage": "",
+        "userviewId": "su",
+        "hideThisUserviewInAppCenter": "",
+        "permission_rules": [{
+            "permission_key": "053faca4-7ed7-9e1c-e246-d3eebc82470e",
+            "permission": {
+                "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                "properties": {}
+            },
+            "permission_name": "Admin"
+        }],
+        "userview_thumbnail": "#appResource.user-account-login-icon.png#",
+        "userview_category": "",
+        "theme": {
+            "className": "org.joget.gov.GovTheme",
+            "properties": {
+                "dx8navBadge": "#00ACAC",
+                "css": "",
+                "primaryColor": "DARKROYALBLUE",
+                "loginBackground": "",
+                "disablePush": "",
+                "dx8navLinkColor": "#FFFFFF",
+                "removeAssignmentTitle": "",
+                "shortcutLinkLabel": "Shortcut",
+                "disableHelpGuide": "",
+                "logo": "",
+                "enableResponsiveSwitch": "true",
+                "dx8headerFontColor": "#20252A",
+                "fav_icon": "",
+                "dx8navLinkIcon": "#FFFFFF",
+                "horizontal_menu": "",
+                "accentColor": "BLUE",
+                "profile": "",
+                "homeAttractBanner": "",
+                "dx8headingBgColor": "#20252A",
+                "dx8linkColor": "#348FE2",
+                "homeUrl": "",
+                "dx8linkActiveColor": "#2A72B5",
+                "subheader": "",
+                "disablePwa": "",
+                "dx8footerColor": "#2D353C",
+                "loginPageBottom": "",
+                "dx8contentbackground": "#FFFFFF",
+                "dx8backgroundImage": "",
+                "themeScheme": "light",
+                "dx8navBadgeText": "#FFFFFF",
+                "dx8background": "#DEE2E6",
+                "dx8headerColor": "#FFFFFF",
+                "dx8colorScheme": "rgb(233, 233, 233);rgb(255, 255, 255);rgb(170, 190, 178);rgb(0, 101, 45);rgb(0, 121, 107);rgb(0, 76, 64)",
+                "dx8navBackground": "#2D353C",
+                "buttonColor": "GREY",
+                "displayCategoryLabel": "",
+                "js": "",
+                "compactTheme": "",
+                "dx8navActiveIconColor": "#00ACAC",
+                "dx8navScrollbarThumb": "#999999",
+                "userMenu": [],
+                "urlsToCache": "",
+                "loginPageTop": "",
+                "userImage": "",
+                "shortcut": [],
+                "dx8buttonColor": "#FFFFFF",
+                "fontControl": "",
+                "usingLocalFonts": "true",
+                "buttonTextColor": "WHITE",
+                "dx8navActiveLinkBackground": "#20252A",
+                "dx8fontColor": "#2D353C",
+                "menuFontColor": "BLACK",
+                "dx8navLinkBackground": "#2D353C",
+                "dx8buttonBackground": "#348FE2",
+                "dx8contentFontColor": "#2D353C",
+                "subfooter": "",
+                "dx8footerBackground": "#FFFFFF",
+                "dx8headingFontColor": "#FFFFFF",
+                "dx8primaryColor": "#67ABE9",
+                "darkMode": "",
+                "inbox": "current",
+                "dx8navActiveLinkColor": "#FFFFFF",
+                "fontColor": "WHITE"
+            }
+        },
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "userviewName": "Account Creation App"
+    }}
+}
