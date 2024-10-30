@@ -8,11 +8,14 @@
                         "requiredSanitize": "",
                         "maxlength": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "className": "org.joget.apps.form.lib.DuplicateValueValidator",
                             "properties": {
-                                "type": "email",
-                                "message": "",
-                                "mandatory": "true"
+                                "regex": "",
+                                "formDefId": "accCreation",
+                                "errorDuplicateMsg": "",
+                                "mandatory": "true",
+                                "errorFormatMsg": "",
+                                "fieldId": "email"
                             }
                         },
                         "label": "Email (=Username)",
