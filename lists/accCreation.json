@@ -32,18 +32,19 @@
         {
             "filterable": true,
             "hidden": "false",
-            "name": "username",
-            "id": "column_8",
-            "label": "Username",
+            "name": "email",
+            "id": "column_1",
+            "label": "Email (=Username)",
             "sortable": "false"
         },
         {
             "filterable": true,
             "hidden": "false",
-            "name": "firstName",
-            "id": "column_2",
-            "label": "First name",
-            "sortable": "false"
+            "name": "username",
+            "id": "column_8",
+            "label": "Username",
+            "sortable": "false",
+            "datalist_type": "column"
         },
         {
             "filterable": true,
