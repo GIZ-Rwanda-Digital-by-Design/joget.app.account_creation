@@ -15,7 +15,7 @@
                                 "mandatory": "true"
                             }
                         },
-                        "label": "Email (= Username)",
+                        "label": "Email (=Username)",
                         "encryption": "",
                         "readonly": "",
                         "size": "50",
