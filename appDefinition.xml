@@ -130,8 +130,8 @@
                <packageParticipant>
                   <processDefId>signup</processDefId>
                   <participantId>Approver</participantId>
-                  <type>user</type>
-                  <value>wiemann.thomas</value>
+                  <type>group</type>
+                  <value>validator</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
