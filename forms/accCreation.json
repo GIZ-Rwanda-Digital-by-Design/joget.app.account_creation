@@ -10,11 +10,11 @@
                         "validator": {
                             "className": "org.joget.apps.form.lib.DuplicateValueValidator",
                             "properties": {
-                                "regex": "",
+                                "regex": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
                                 "formDefId": "accCreation",
                                 "errorDuplicateMsg": "",
                                 "mandatory": "true",
-                                "errorFormatMsg": "",
+                                "errorFormatMsg": "Please enter a valid eMail.",
                                 "fieldId": "email"
                             }
                         },
@@ -135,10 +135,11 @@
                 {
                     "className": "org.joget.apps.form.lib.CustomHTML",
                     "properties": {
+                        "requiredSanitize": "",
                         "autoPopulate": "",
                         "id": "field13",
                         "label": "",
-                        "value": "You will be notified via email when your Joget Account is approved."
+                        "value": "You will be notified via email when your Service Account is approved."
                     }
                 },
                 {
