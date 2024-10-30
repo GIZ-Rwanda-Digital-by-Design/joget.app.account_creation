@@ -1,4 +1,5 @@
 <appDefinition>
+   <appId>AccCreation</appId>
    <id>AccCreation</id>
    <version></version>
    <name>Account Creation App</name>

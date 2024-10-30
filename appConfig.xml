@@ -1,4 +1,5 @@
 <appDefinition>
+   <appId>AccCreation</appId>
    <id>AccCreation</id>
    <version></version>
    <name>Account Creation App</name>
@@ -11,21 +12,15 @@
    <environmentVariableList>
       <environmentVariable>
          <id>maxAccountRequestID</id>
-         <appId>AccCreation</appId>
-         <appVersion>3</appVersion>
          <value>0</value>
       </environmentVariable>
       <environmentVariable>
          <id>SignupNo</id>
-         <appId>AccCreation</appId>
-         <appVersion>3</appVersion>
-         <value>20</value>
+         <value>14</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
       </environmentVariable>
       <environmentVariable>
          <id>url</id>
-         <appId>AccCreation</appId>
-         <appVersion>3</appVersion>
          <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/_ja_inbox</value>
       </environmentVariable>
    </environmentVariableList>
