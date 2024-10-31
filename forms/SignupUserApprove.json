@@ -170,17 +170,17 @@
                             "optionsBinder": {
                                 "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
                                 "properties": {
-                                    "headers": [],
+                                    "headers": [{
+                                        "name": "Authorization",
+                                        "value": "#envVariable.apiAuthorizationJoget#"
+                                    }],
                                     "addEmptyOption": "",
                                     "groupingColumn": "",
                                     "requestType": "post",
                                     "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/directory/admin/group/list",
                                     "multirowBaseObject": "data",
                                     "emptyDependencyValueCheck": "",
-                                    "params": [{
-                                        "name": "Authorization",
-                                        "value": "#envVariable.apiAuthorizationJoget#"
-                                    }],
+                                    "params": [],
                                     "postMethod": "",
                                     "labelColumn": "name",
                                     "copyCookies": "true",
