@@ -177,7 +177,10 @@
                                     "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/directory/admin/group/list",
                                     "multirowBaseObject": "data",
                                     "emptyDependencyValueCheck": "",
-                                    "params": [],
+                                    "params": [{
+                                        "name": "Authorization",
+                                        "value": "#envVariable.apiAuthorizationJoget#"
+                                    }],
                                     "postMethod": "",
                                     "labelColumn": "name",
                                     "copyCookies": "true",
