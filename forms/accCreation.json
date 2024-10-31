@@ -109,7 +109,10 @@
                         "optionsBinder": {
                             "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
                             "properties": {
-                                "headers": [],
+                                "headers": [{
+                                    "name": "Authorization",
+                                    "value": "#envVariable.apiAuthorizationJoget#"
+                                }],
                                 "addEmptyOption": "",
                                 "groupingColumn": "",
                                 "requestType": "post",
