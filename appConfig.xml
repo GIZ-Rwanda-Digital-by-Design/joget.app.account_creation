@@ -1,0 +1,33 @@
+<appDefinition>
+   <appId>AccCreation</appId>
+   <id>AccCreation</id>
+   <version></version>
+   <name>Account Creation App</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>maxAccountRequestID</id>
+         <value>0</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>SignupNo</id>
+         <value>15</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>url</id>
+         <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/_ja_inbox</value>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>pHWYEXz7oylFy8pxP6yrjSGqO0G4h/ey1Ki24yETEJyv38yletVy8fKWdtQS9XX9ROBcrWdKG0c=</license>
+   <description>Version 3 Account Creation App with Groups
+    removed the timezone setting
+    eMail = id</description>
+</appDefinition>
