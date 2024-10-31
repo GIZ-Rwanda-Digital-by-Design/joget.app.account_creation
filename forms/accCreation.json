@@ -111,7 +111,7 @@
                             "properties": {
                                 "headers": [{
                                     "name": "Authorization",
-                                    "value": "#envVariable.apiAuthorizationJogetDev#"
+                                    "value": "#envVariable.apiAuthorizationJoget#"
                                 }],
                                 "addEmptyOption": "",
                                 "groupingColumn": "",
