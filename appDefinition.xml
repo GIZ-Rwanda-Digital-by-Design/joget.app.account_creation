@@ -150,7 +150,6 @@
          <appId>AccCreation</appId>
          <appVersion>4</appVersion>
          <filesize>16137</filesize>
-         <permissionClass></permissionClass>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
