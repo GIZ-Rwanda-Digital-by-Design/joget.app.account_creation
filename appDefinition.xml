@@ -163,5 +163,6 @@
    <license>pHWYEXz7oylFy8pxP6yrjSGqO0G4h/ey1Ki24yETEJyv38yletVy8fKWdtQS9XX9ROBcrWdKG0c=</license>
    <description>Version 4 Account Creation App
     groups to be pulled with authentication
-    authentication stored as environment variable</description>
+    authentication stored as environment variable
+    created an account for the app</description>
 </appDefinition>
