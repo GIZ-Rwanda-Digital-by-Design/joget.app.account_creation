@@ -146,6 +146,14 @@
    <messageList/>
    <resourceList>
       <appResource>
+         <id>user-1.png</id>
+         <appId>AccCreation</appId>
+         <appVersion>4</appVersion>
+         <filesize>16137</filesize>
+         <permissionClass></permissionClass>
+         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
+      </appResource>
+      <appResource>
          <id>user-account-login-icon.png</id>
          <appId>AccCreation</appId>
          <appVersion>4</appVersion>
