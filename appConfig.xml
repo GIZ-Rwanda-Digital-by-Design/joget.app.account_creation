@@ -10,6 +10,12 @@
    <pluginDefaultPropertiesList/>
    <environmentVariableList>
       <environmentVariable>
+         <id>apiAuthorizationJoget</id>
+         <appId>AccCreation</appId>
+         <value>Authorization: Basic YXBwLmFjY291bnRDcmVhdGlvbjpnaXJwYWotbnlydHUwLWJpWGZldw==</value>
+         <remarks></remarks>
+      </environmentVariable>
+      <environmentVariable>
          <id>maxAccountRequestID</id>
          <appId>AccCreation</appId>
          <appVersion>4</appVersion>
