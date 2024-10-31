@@ -129,6 +129,7 @@
     },
     "setting": {"properties": {
         "__": "",
+        "tempDisablePermissionChecking": "",
         "userviewDescription": "",
         "noPermissionMessage": "",
         "userviewId": "su",
@@ -141,7 +142,7 @@
             },
             "permission_name": "Admin"
         }],
-        "userview_thumbnail": "#appResource.user-account-login-icon.png#",
+        "userview_thumbnail": "#appResource.user-1.png#",
         "userview_category": "",
         "theme": {
             "className": "org.joget.gov.GovTheme",
