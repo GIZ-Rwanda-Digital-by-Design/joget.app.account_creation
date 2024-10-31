@@ -172,7 +172,7 @@
                                 "properties": {
                                     "headers": [{
                                         "name": "Authorization",
-                                        "value": "Basic YXBwLmFjY291bnRDcmVhdGlvbjpnaXJwYWotbnlydHUwLWJpWGZldw=="
+                                        "value": "#envVariable.apiAuthorizationJoget#"
                                     }],
                                     "addEmptyOption": "",
                                     "groupingColumn": "",
