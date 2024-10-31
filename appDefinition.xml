@@ -148,20 +148,20 @@
       <appResource>
          <id>user-account-login-icon.png</id>
          <appId>AccCreation</appId>
-         <appVersion>3</appVersion>
+         <appVersion>4</appVersion>
          <filesize>3978</filesize>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>user-account-login-icon.svg</id>
          <appId>AccCreation</appId>
-         <appVersion>3</appVersion>
+         <appVersion>4</appVersion>
          <filesize>2085</filesize>
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.user-account-login-icon.svg#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
    </resourceList>
    <license>pHWYEXz7oylFy8pxP6yrjSGqO0G4h/ey1Ki24yETEJyv38yletVy8fKWdtQS9XX9ROBcrWdKG0c=</license>
-   <description>Version 3 Account Creation App with Groups
-    removed the timezone setting
-    eMail = id</description>
+   <description>Version 4 Account Creation App
+    groups to be pulled with authentication
+    authentication stored as environment variable</description>
 </appDefinition>
