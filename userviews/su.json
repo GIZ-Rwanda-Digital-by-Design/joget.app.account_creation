@@ -161,7 +161,7 @@
                 "dx8headerFontColor": "#20252A",
                 "fav_icon": "#appResource.user-1.png#",
                 "dx8navLinkIcon": "#FFFFFF",
-                "horizontal_menu": "true",
+                "horizontal_menu": "",
                 "accentColor": "BLUE",
                 "profile": "",
                 "homeAttractBanner": "",
