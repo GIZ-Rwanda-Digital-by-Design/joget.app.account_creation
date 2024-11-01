@@ -122,7 +122,7 @@
     "properties": {
         "logoutText": "Logout",
         "welcomeMessage": "",
-        "name": "Account Creation App",
+        "name": "Create Account",
         "description": "",
         "footerMessage": "Powered by Joget",
         "id": "su"
