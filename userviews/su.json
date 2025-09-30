@@ -11,7 +11,10 @@
                         "fieldPassoverMethod": "append",
                         "permission_rules": {
                             "5f01f84e-b536-041d-4218-07c6498220e7": {},
-                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            }
                         },
                         "keyName": "",
                         "label": "Create Your Account",
@@ -151,7 +154,10 @@
                         "fieldPassoverMethod": "append",
                         "permission_rules": {
                             "5f01f84e-b536-041d-4218-07c6498220e7": {},
-                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            }
                         },
                         "keyName": "",
                         "label": "Forgot Password",
@@ -268,7 +274,10 @@
                         "hide": "yes",
                         "permissionDeny": ""
                     },
-                    "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                    "053faca4-7ed7-9e1c-e246-d3eebc82470e": {
+                        "hide": "yes",
+                        "permissionDeny": ""
+                    }
                 },
                 "permission": {
                     "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
