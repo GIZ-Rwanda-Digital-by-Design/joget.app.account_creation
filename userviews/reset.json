@@ -60,12 +60,12 @@
                 "shortcutLinkLabel": "Shortcut",
                 "dx8-dark-sidebar-navActiveLinkColor": "#FFFFFF",
                 "disableHelpGuide": "",
-                "logo": "#appResource.computer-icons-icon-design-download-reset-button-png-favpng-jguwtyxbG9Ru3cgzbk4XM0Vfv.jpg#",
+                "logo": "",
                 "dx8mainBoxBackgroundColor": "",
                 "enableResponsiveSwitch": "true",
                 "dx8-dark-sidebar-navLinkIcon": "#8D98AF",
                 "dx8headerFontColor": "",
-                "fav_icon": "#appResource.computer-icons-icon-design-download-reset-button-png-favpng-jguwtyxbG9Ru3cgzbk4XM0Vfv.jpg#",
+                "fav_icon": "",
                 "mobileViewDisabled": "",
                 "dx8navLinkIcon": "",
                 "horizontal_menu": "dark-sidebar",
@@ -127,7 +127,7 @@
             }
         },
         "permission": {
-            "className": "",
+            "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
             "properties": {}
         },
         "userviewName": "Reset"
