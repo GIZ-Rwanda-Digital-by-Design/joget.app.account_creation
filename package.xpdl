@@ -119,7 +119,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="60,468"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,468"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="assignUserGroup" Name="Assign User Group">
