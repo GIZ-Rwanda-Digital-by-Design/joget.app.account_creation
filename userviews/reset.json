@@ -1,0 +1,46 @@
+{
+    "className": "org.joget.apps.userview.model.Userview",
+    "categories": [{
+        "className": "org.joget.apps.userview.model.UserviewCategory",
+        "menus": [{
+            "className": "org.joget.apps.userview.lib.HtmlPage",
+            "properties": {
+                "userviewCacheDuration": "",
+                "userviewCacheScope": "",
+                "id": "3ce0894d-a34b-437f-a33e-1d6d9865c1ea",
+                "label": "Welcome",
+                "enableOffline": "",
+                "customId": "welcome",
+                "content": "<p>p<\/p>",
+                "style-display": "none"
+            }
+        }],
+        "properties": {
+            "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+            "label": "<i class='fa fa-home'><\/i> Home"
+        }
+    }],
+    "properties": {
+        "logoutText": "Logout",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#",
+        "name": "Reset",
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "reset"
+    },
+    "setting": {"properties": {
+        "mobileViewDisabled": "",
+        "userviewDescription": "",
+        "mobileCacheEnabled": "",
+        "userviewId": "reset",
+        "theme": {
+            "className": "org.joget.apps.userview.lib.Dx8TrimedaTheme",
+            "properties": {}
+        },
+        "permission": {
+            "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
+            "properties": {}
+        },
+        "userviewName": "Reset"
+    }}
+}
