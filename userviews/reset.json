@@ -44,7 +44,7 @@
         "userviewDescription": "",
         "userviewId": "reset",
         "hideThisUserviewInAppCenter": "",
-        "userview_thumbnail": "",
+        "userview_thumbnail": "#appResource.computer-icons-icon-design-download-reset-button-png-favpng-jguwtyxbG9Ru3cgzbk4XM0Vfv.jpg#",
         "userview_category": "",
         "theme": {
             "className": "org.joget.apps.userview.lib.Dx8TrimedaTheme",
