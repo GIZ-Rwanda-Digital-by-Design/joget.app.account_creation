@@ -1,0 +1,64 @@
+{
+    "template": {
+        "className": "",
+        "properties": {}
+    },
+    "rowActions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "id": "rowAction_0",
+        "properties": {
+            "hrefColumn": "id",
+            "hrefParam": "id",
+            "rules": [],
+            "label": "Map",
+            "href": "id-map",
+            "confirmation": "",
+            "link-css-display-type": "btn btn-sm btn-primary",
+            "datalist_type": "row_action",
+            "target": "_self",
+            "header_label": ""
+        }
+    }],
+    "columns": [
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "email",
+            "id": "column_5",
+            "label": "email",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "name",
+            "id": "column_6",
+            "label": "organizationName",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "name": "c_sectorName",
+            "id": "column_4",
+            "label": "c_sectorName",
+            "sortable": "false"
+        }
+    ],
+    "pageSize": "0",
+    "orderBy": "",
+    "description": "",
+    "filters": [],
+    "pageSizeSelectorOptions": "10,20,30,40,50,100",
+    "name": "All Users List",
+    "id": "allUsersList",
+    "binder": {
+        "className": "org.joget.marketplace.SqlDataListBinder",
+        "properties": {
+            "primary_key": "id",
+            "sql": "SELECT \n    u.*,\n    e.organizationId,\n    o.name as organizationName,\n    s.c_sectorName\nFROM \n    dir_user u\nLEFT JOIN \n    dir_employment e ON u.username = e.userid\nLEFT JOIN \n    dir_organization o ON e.organizationId = o.id\nLEFT JOIN\n    app_fd_map_sec_and_inst m ON o.id = m.c_institutionName\nLEFT JOIN\n    app_fd_sector_creation s ON m.c_sectorName = s.id\nWHERE \n    1;"
+        }
+    },
+    "actions": [],
+    "order": ""
+}

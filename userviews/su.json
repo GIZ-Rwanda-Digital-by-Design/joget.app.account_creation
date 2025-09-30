@@ -1,0 +1,426 @@
+{
+    "className": "org.joget.apps.userview.model.Userview",
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "keyName": "",
+                        "label": "Create Your Account",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "top",
+                        "customId": "createAccount",
+                        "messageShowAfterComplete": "Thank you for signing up. You will be notified via email when your Joget Account is approved.",
+                        "userviewCacheDuration": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "CA3049E10BFC4E1C854FD263255C8349",
+                        "processDefId": "signup",
+                        "redirectUrlAfterComplete": "/jw/web/userview/appcenter/home/_/home",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "all",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "showPopup": "false",
+                        "label": "Inbox",
+                        "rowCount": "false",
+                        "id": "CDD6814D9D23458AA8A02A5566F95DDE",
+                        "buttonPosition": "bottomLeft"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "",
+                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "id": "category-BF45AFCEDC934F059FE34467CA495FF6",
+                "label": "<i class=\"far fa-address-book\"><\/i> User"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "process",
+                        "list-customFooter": "",
+                        "cacheAllLinks": "",
+                        "assignment-customHeader": "",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "assignment-customFooter": "",
+                        "label": "Process Inbox",
+                        "enableOffline": "",
+                        "customId": "Inbox",
+                        "buttonPosition": "bothLeft",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "processId": "signup",
+                        "showPopup": "",
+                        "rowCount": "true",
+                        "id": "BACAF27891904AE3739BD3D2469CAF3D",
+                        "list-customHeader": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Account Requests",
+                        "enableOffline": "",
+                        "customId": "",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "accCreation",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "true",
+                        "id": "B2FF94272205462FA1EDE118613316F3"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "yes",
+                "permissionComment": "",
+                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {
+                    "hide": "",
+                    "permissionDeny": ""
+                }},
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "<i class=\"fab fa-affiliatetheme\"><\/i> Admin",
+                "id": "category-3C11253059AB4D17BD9E9F1D24DC0EF1",
+                "permissionDeny": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "keyName": "",
+                        "label": "Forgot Password",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "style-padding-top": "30px",
+                        "customId": "forgotPasswordMenu",
+                        "userviewCacheDuration": "",
+                        "messageShowAfterComplete": "We will verify if your email exist in our database and will send to you the email of resetting your password",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "3193FFCC503842E8CAFD4ED5CCDB47F3",
+                        "processDefId": "forgotPasswordProcess",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "keyName": "",
+                        "label": "Reset Password",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "resetPasswordProcessMenu",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "55F23280090D47051F03D435F9B0AD35",
+                        "processDefId": "resetPasswordProcess",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Request of Reset password",
+                        "enableOffline": "",
+                        "customId": "requestOfResetPassword",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "requestOfResetPasswordForm",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "D66F46FCEADC4F22ADACC172CBFB3D98"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "",
+                        "actionOnCancel": "",
+                        "redirectTargetOnCancel": "top",
+                        "customFooter": "",
+                        "paramName": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "userNotFoundMenu",
+                        "showInPopupDialog": "",
+                        "readonly": "",
+                        "cancelButtonLabel": "",
+                        "actionAfterSaved": "",
+                        "id": "636670D5F5654EC6ABCB448DD60E7D86",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": "",
+                        "formId": "usernNotFoundForm",
+                        "customHeader": "",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnComplete": "top",
+                        "keyName": "",
+                        "label": "User not found",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheScope": "",
+                        "readonlyLabel": "true"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "",
+                        "actionOnCancel": "",
+                        "redirectTargetOnCancel": "top",
+                        "customFooter": "",
+                        "paramName": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "",
+                        "showInPopupDialog": "",
+                        "readonly": "",
+                        "cancelButtonLabel": "",
+                        "actionAfterSaved": "",
+                        "id": "D3780826B50D41BC9C32DF430749F430",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": "",
+                        "formId": "sectorCreation",
+                        "customHeader": "",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnComplete": "",
+                        "keyName": "",
+                        "label": "Add Sector",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheScope": "",
+                        "readonlyLabel": "true"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.FormMenu",
+                    "properties": {
+                        "loadDataWithKey": "",
+                        "redirectUrlOnCancel": "",
+                        "actionOnCancel": "",
+                        "redirectTargetOnCancel": "top",
+                        "customFooter": "",
+                        "paramName": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "mapInstitutionAndSector",
+                        "showInPopupDialog": "",
+                        "readonly": "",
+                        "cancelButtonLabel": "",
+                        "actionAfterSaved": "",
+                        "id": "7841886DB6A143D94C6C7D3E42EC3A3B",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": "",
+                        "formId": "mapSectorAndInstitution",
+                        "customHeader": "",
+                        "fieldPassoverMethod": "append",
+                        "redirectTargetOnComplete": "",
+                        "keyName": "",
+                        "label": "Map Institution and Sector",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "submitButtonLabel": "",
+                        "userviewCacheScope": "",
+                        "readonlyLabel": "true"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "Mapping List",
+                        "enableOffline": "",
+                        "customId": "mappingList",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "allUsersList",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "9E3B748B36D044A791961D087811BFB2"
+                    }
+                }
+            ],
+            "properties": {
+                "hide": "yes",
+                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "Hidden",
+                "id": "category-684AAC22DB424FB64D4F29F19A96EF5F",
+                "permissionDeny": ""
+            }
+        }
+    ],
+    "properties": {
+        "logoutText": "Logout",
+        "welcomeMessage": "",
+        "name": "Create Account",
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "su"
+    },
+    "setting": {"properties": {
+        "__": "",
+        "userviewDescription": "",
+        "noPermissionMessage": "",
+        "userviewId": "su",
+        "hideThisUserviewInAppCenter": "",
+        "permission_rules": [{
+            "permission_key": "053faca4-7ed7-9e1c-e246-d3eebc82470e",
+            "permission": {
+                "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                "properties": {}
+            },
+            "permission_name": "Admin"
+        }],
+        "userview_thumbnail": "#appResource.user-1.png#",
+        "userview_category": "",
+        "theme": {
+            "className": "org.joget.gov.GovTheme",
+            "properties": {
+                "dx8navBadge": "#1677FF",
+                "css": "body#forgotPasswordMenu .runProcess-body-header{\n    text-align: center;\n}\n\nbody#forgotPasswordMenu i.form-button, .form-column.form-column-horizontal, .form-column .form-cell, body#forgotPasswordMenu i.form-button #assignmentComplete {\n    width: 100%;\n}\n\n",
+                "primaryColor": "DARKROYALBLUE",
+                "loginBackground": "",
+                "disablePush": "",
+                "dx8navLinkColor": "rgba(0, 0, 0, 0.88)",
+                "removeAssignmentTitle": "",
+                "shortcutLinkLabel": "Shortcut",
+                "disableHelpGuide": "",
+                "logo": "",
+                "enableResponsiveSwitch": "true",
+                "dx8headerFontColor": "rgba(0, 0, 0, 0.88)",
+                "fav_icon": "",
+                "dx8navLinkIcon": "rgba(0, 0, 0, 0.88)",
+                "horizontal_menu": "",
+                "accentColor": "BLUE",
+                "profile": "",
+                "homeAttractBanner": "",
+                "dx8headingBgColor": "#FFFFFF",
+                "dx8linkColor": "#1677FF",
+                "homeUrl": "",
+                "dx8linkActiveColor": "#69B1FF",
+                "subheader": "",
+                "disablePwa": "",
+                "dx8footerColor": "rgba(0, 0, 0, 0.88)",
+                "loginPageBottom": "",
+                "dx8contentbackground": "#FFFFFF",
+                "dx8backgroundImage": "",
+                "themeScheme": "light",
+                "dx8navBadgeText": "#FFFFFF",
+                "dx8background": "#F0F2F5",
+                "dx8headerColor": "#FFFFFF",
+                "dx8colorScheme": "rgb(249, 250, 251);rgb(59, 67, 72);rgb(3, 169, 244);rgb(110, 206, 251);rgb(255, 255, 255);rgb(255, 255, 255)",
+                "dx8navBackground": "#FFFFFF",
+                "buttonColor": "GREY",
+                "displayCategoryLabel": "",
+                "js": "",
+                "compactTheme": "",
+                "dx8navActiveIconColor": "#1677FF",
+                "dx8navScrollbarThumb": "#C4C4C4",
+                "userMenu": [],
+                "urlsToCache": "",
+                "loginPageTop": "",
+                "userImage": "",
+                "shortcut": [],
+                "dx8buttonColor": "#FFFFFF",
+                "fontControl": "",
+                "usingLocalFonts": "true",
+                "buttonTextColor": "WHITE",
+                "dx8navActiveLinkBackground": "#E6F4FF",
+                "dx8fontColor": "rgba(0, 0, 0, 0.88)",
+                "menuFontColor": "BLACK",
+                "dx8navLinkBackground": "#FFFFFF",
+                "dx8buttonBackground": "#1677FF",
+                "dx8contentFontColor": "rgba(0, 0, 0, 0.88)",
+                "subfooter": "",
+                "userImageUrlHash": "#appResource.user-1.png#",
+                "dx8footerBackground": "#F0F2F5",
+                "dx8headingFontColor": "rgba(0, 0, 0, 0.88)",
+                "dx8primaryColor": "#1677FF",
+                "darkMode": "",
+                "inbox": "current",
+                "dx8navActiveLinkColor": "#1677FF",
+                "fontColor": "WHITE"
+            }
+        },
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "userviewName": "Create account"
+    }}
+}

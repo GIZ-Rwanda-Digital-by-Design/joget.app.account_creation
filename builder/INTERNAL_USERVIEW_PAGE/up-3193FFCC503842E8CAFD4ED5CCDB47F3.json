@@ -1,0 +1,83 @@
+{
+    "elements": [{
+        "elements": [
+            {
+                "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                "properties": {
+                    "style-mobile-max-width": "100%",
+                    "style-tablet-flex": "0 0 100%",
+                    "style-flex": "0 0 30%",
+                    "style-mobile-flex": "0 0 100%",
+                    "style-max-width": "30%",
+                    "style-tablet-max-width": "100%"
+                }
+            },
+            {
+                "elements": [
+                    {"className": "menu-component"},
+                    {
+                        "className": "org.joget.apps.userview.lib.HtmlPage",
+                        "properties": {
+                            "userviewCacheDuration": "20",
+                            "userviewCacheScope": "",
+                            "label": "Rich Text",
+                            "id": "6CEAE6D094F8452E59B90E05F80F02A6",
+                            "enableOffline": "",
+                            "style-padding-top": "30px",
+                            "customId": "",
+                            "content": "<div class=\"text-center mt----25 mb-30\"><span>Remember your password? <a href=\"/jw/web/login\">Sign in<\/a><\/span><\/div>"
+                        }
+                    }
+                ],
+                "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                "properties": {
+                    "style-mobile-max-width": "100%",
+                    "style-tablet-flex": "0 0 100%",
+                    "style-flex": "0 0 40%",
+                    "style-mobile-flex": "0 0 100%",
+                    "style-max-width": "40%",
+                    "style-tablet-max-width": "100%"
+                }
+            },
+            {
+                "elements": [],
+                "className": "org.joget.apps.userview.lib.component.ColumnComponent",
+                "properties": {
+                    "style-mobile-max-width": "100%",
+                    "style-tablet-flex": "0 0 100%",
+                    "style-flex": "0 0 30%",
+                    "style-mobile-flex": "0 0 100%",
+                    "style-max-width": "30%",
+                    "style-tablet-max-width": "100%"
+                }
+            }
+        ],
+        "className": "org.joget.apps.userview.lib.component.ColumnsComponent",
+        "properties": {
+            "attr-data-events-listening": [],
+            "gutter": "5px",
+            "columns": [
+                {
+                    "style-mobile-max-width": "100%",
+                    "style-max-width": "30%",
+                    "style-tablet-max-width": "100%"
+                },
+                {
+                    "style-mobile-max-width": "100%",
+                    "style-max-width": "40%",
+                    "style-tablet-max-width": "100%"
+                },
+                {
+                    "style-mobile-max-width": "100%",
+                    "style-max-width": "30%",
+                    "style-tablet-max-width": "100%"
+                }
+            ],
+            "css-mobile-stack-columns": "true",
+            "id": "779C2D14B0E04AF6291C7F91ACB6E44F",
+            "customId": ""
+        }
+    }],
+    "className": "org.joget.apps.userview.model.UserviewPage",
+    "properties": {"id": "up-3193FFCC503842E8CAFD4ED5CCDB47F3"}
+}
