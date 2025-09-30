@@ -318,7 +318,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="anonymous"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="400,470"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="380,450"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="user_not_found_page" Name="User not found page">
@@ -328,7 +328,7 @@
                     <Performer>anonymous</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="anonymous"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,270"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="620,270"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="userFoundTool" Name="User Found And Generate Token">
@@ -338,7 +338,7 @@
                     <Performer>anonymous</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="anonymous"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="580,530"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,530"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="removeEmailInTheQueue" Name="Email removal from the Queueue">
@@ -348,7 +348,7 @@
                     <Performer>anonymous</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="anonymous"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="360,270"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="380,270"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="sendEmailTool" Name="Send and Email">
@@ -358,7 +358,7 @@
                     <Performer>anonymous</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="anonymous"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="820,530"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="840,530"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -395,9 +395,9 @@
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="anonymous"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=anonymous,CONNECTING_ACTIVITY_ID=check_email_or_username_exists,X_OFFSET=240,Y_OFFSET=270,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=anonymous,CONNECTING_ACTIVITY_ID=user_not_found_page,X_OFFSET=820,Y_OFFSET=330,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=anonymous,CONNECTING_ACTIVITY_ID=sendEmailTool,X_OFFSET=1080,Y_OFFSET=530,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=anonymous,CONNECTING_ACTIVITY_ID=check_email_or_username_exists,X_OFFSET=200,Y_OFFSET=270,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=anonymous,CONNECTING_ACTIVITY_ID=user_not_found_page,X_OFFSET=840,Y_OFFSET=330,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=anonymous,CONNECTING_ACTIVITY_ID=sendEmailTool,X_OFFSET=1100,Y_OFFSET=530,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
         <WorkflowProcess Id="resetPasswordProcess" Name="Reset Password Process">
