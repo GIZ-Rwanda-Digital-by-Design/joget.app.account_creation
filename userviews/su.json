@@ -9,7 +9,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "keyName": "",
                         "label": "Create Your Account",
                         "redirectTarget": "",
@@ -34,7 +37,10 @@
                         "appFilter": "all",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
-                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "showPopup": "false",
                         "label": "Inbox",
                         "rowCount": "false",
@@ -45,7 +51,10 @@
             ],
             "properties": {
                 "hide": "",
-                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                "permission_rules": {
+                    "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                    "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                },
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -65,7 +74,10 @@
                         "list-customFooter": "",
                         "cacheAllLinks": "",
                         "assignment-customHeader": "",
-                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "assignment-customFooter": "",
                         "label": "Process Inbox",
                         "enableOffline": "",
@@ -85,7 +97,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "Account Requests",
@@ -106,10 +121,16 @@
             "properties": {
                 "hide": "yes",
                 "permissionComment": "",
-                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {
-                    "hide": "",
-                    "permissionDeny": ""
-                }},
+                "permission_rules": {
+                    "5f01f84e-b536-041d-4218-07c6498220e7": {
+                        "hide": "yes",
+                        "permissionDeny": ""
+                    },
+                    "053faca4-7ed7-9e1c-e246-d3eebc82470e": {
+                        "hide": "",
+                        "permissionDeny": ""
+                    }
+                },
                 "permission": {
                     "className": "",
                     "properties": {}
@@ -128,7 +149,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "keyName": "",
                         "label": "Forgot Password",
                         "redirectTarget": "",
@@ -153,6 +177,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "keyName": "",
                         "label": "Reset Password",
                         "redirectTarget": "",
@@ -176,6 +204,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "Request of Reset password",
@@ -199,6 +231,10 @@
                         "redirectUrlOnCancel": "",
                         "actionOnCancel": "",
                         "redirectTargetOnCancel": "top",
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "customFooter": "",
                         "paramName": "",
                         "enableOffline": "",
@@ -227,7 +263,13 @@
             ],
             "properties": {
                 "hide": "yes",
-                "permission_rules": {"053faca4-7ed7-9e1c-e246-d3eebc82470e": {}},
+                "permission_rules": {
+                    "5f01f84e-b536-041d-4218-07c6498220e7": {
+                        "hide": "yes",
+                        "permissionDeny": ""
+                    },
+                    "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                },
                 "permission": {
                     "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
                     "properties": {}
@@ -254,14 +296,24 @@
         "noPermissionMessage": "",
         "userviewId": "su",
         "hideThisUserviewInAppCenter": "",
-        "permission_rules": [{
-            "permission_key": "053faca4-7ed7-9e1c-e246-d3eebc82470e",
-            "permission": {
-                "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
-                "properties": {}
+        "permission_rules": [
+            {
+                "permission_key": "5f01f84e-b536-041d-4218-07c6498220e7",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
+                    "properties": {}
+                },
+                "permission_name": "Anonymous"
             },
-            "permission_name": "Admin"
-        }],
+            {
+                "permission_key": "053faca4-7ed7-9e1c-e246-d3eebc82470e",
+                "permission": {
+                    "className": "org.joget.plugin.enterprise.AdminUserviewPermission",
+                    "properties": {}
+                },
+                "permission_name": "Admin"
+            }
+        ],
         "userview_thumbnail": "#appResource.user-account-login-icon.png#",
         "userview_category": "",
         "theme": {
