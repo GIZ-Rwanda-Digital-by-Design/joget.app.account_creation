@@ -11,7 +11,14 @@
                                 "maxlength": "",
                                 "validator": {
                                     "className": "org.joget.apps.form.lib.DuplicateValueValidator",
-                                    "properties": {}
+                                    "properties": {
+                                        "regex": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                                        "formDefId": "accCreation",
+                                        "errorDuplicateMsg": "",
+                                        "mandatory": "true",
+                                        "errorFormatMsg": "Please enter a valid eMail.",
+                                        "fieldId": "email"
+                                    }
                                 },
                                 "label": "Email (=Username)",
                                 "disableIncrementDecrementArrow": "",
