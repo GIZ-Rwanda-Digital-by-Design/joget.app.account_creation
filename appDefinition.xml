@@ -259,20 +259,20 @@
          </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
-               <string>resetPasswordProcess::requestor</string>
+               <string>forgotPasswordProcess::anonymous</string>
                <packageParticipant>
-                  <processDefId>resetPasswordProcess</processDefId>
-                  <participantId>requestor</participantId>
+                  <processDefId>forgotPasswordProcess</processDefId>
+                  <participantId>anonymous</participantId>
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
                </packageParticipant>
             </entry>
             <entry>
-               <string>forgotPasswordProcess::anonymous</string>
+               <string>resetPasswordProcess::requestor</string>
                <packageParticipant>
-                  <processDefId>forgotPasswordProcess</processDefId>
-                  <participantId>anonymous</participantId>
+                  <processDefId>resetPasswordProcess</processDefId>
+                  <participantId>requestor</participantId>
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
@@ -308,6 +308,14 @@
    <environmentVariableList/>
    <messageList/>
    <resourceList>
+      <appResource>
+         <id>computer-icons-icon-design-download-reset-button-png-favpng-jguwtyxbG9Ru3cgzbk4XM0Vfv.jpg</id>
+         <appId>AccCreation</appId>
+         <appVersion>6</appVersion>
+         <filesize>55698</filesize>
+         <permissionClass>org.joget.apps.userview.lib.LoggedInUserPermission</permissionClass>
+         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;org.joget.apps.userview.lib.LoggedInUserPermission&quot;, &quot;properties&quot;: {}}}</permissionProperties>
+      </appResource>
       <appResource>
          <id>user-1.png</id>
          <appId>AccCreation</appId>
