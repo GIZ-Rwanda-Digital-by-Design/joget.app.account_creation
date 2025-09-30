@@ -41,7 +41,10 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
                         "permission_rules": {
-                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {
+                                "permissionHidden": "true",
+                                "permissionDeny": ""
+                            },
                             "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
                         },
                         "showPopup": "false",
