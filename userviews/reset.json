@@ -3,16 +3,27 @@
     "categories": [{
         "className": "org.joget.apps.userview.model.UserviewCategory",
         "menus": [{
-            "className": "org.joget.apps.userview.lib.HtmlPage",
+            "className": "org.joget.apps.userview.lib.RunProcess",
             "properties": {
-                "userviewCacheDuration": "",
-                "userviewCacheScope": "",
-                "id": "3ce0894d-a34b-437f-a33e-1d6d9865c1ea",
-                "label": "Welcome",
+                "runProcessDirectly": "Yes",
+                "fieldPassoverMethod": "append",
+                "keyName": "",
+                "label": "Forgot Password",
+                "redirectTarget": "",
                 "enableOffline": "",
-                "customId": "welcome",
-                "content": "<p>p<\/p>",
-                "style-display": "none"
+                "afterSavedReloadTarget": "true",
+                "customId": "forgot_password",
+                "userviewCacheDuration": "20",
+                "messageShowAfterComplete": "",
+                "showInPopupDialog": "",
+                "userviewCacheScope": "",
+                "actionAfterSaved": "",
+                "runProcessSubmitLabel": "",
+                "id": "82032954821741221FD410FCD6918E85",
+                "iconIncluded": false,
+                "processDefId": "forgotPasswordProcess",
+                "redirectUrlAfterComplete": "",
+                "fieldPassover": ""
             }
         }],
         "properties": {
@@ -29,13 +40,14 @@
         "id": "reset"
     },
     "setting": {"properties": {
-        "mobileViewDisabled": "",
         "userviewDescription": "",
-        "mobileCacheEnabled": "",
         "userviewId": "reset",
         "theme": {
             "className": "org.joget.apps.userview.lib.Dx8TrimedaTheme",
-            "properties": {}
+            "properties": {
+                "mobileViewDisabled": "",
+                "mobileCacheEnabled": ""
+            }
         },
         "permission": {
             "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
