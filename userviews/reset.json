@@ -127,7 +127,7 @@
             }
         },
         "permission": {
-            "className": "",
+            "className": "org.joget.plugin.enterprise.AnonymousUserviewPermission",
             "properties": {}
         },
         "userviewName": "Reset"
