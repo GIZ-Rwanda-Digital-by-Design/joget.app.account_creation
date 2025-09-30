@@ -15,7 +15,6 @@
          <appId>AccCreation</appId>
          <appVersion>6</appVersion>
          <value>Basic YXBwLkFjY291bnRDcmVhdGlvbjpnb3ZzdGFjaw==</value>
-         <remarks></remarks>
       </environmentVariable>
       <environmentVariable>
          <id>maxAccountRequestID</id>
