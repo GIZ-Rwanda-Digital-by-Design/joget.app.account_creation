@@ -14,7 +14,8 @@
          <id>apiAuthorizationJoget</id>
          <appId>AccCreation</appId>
          <appVersion>6</appVersion>
-         <value>Basic YWRtaW46N1pzNmI3e0M/alhN</value>
+         <value>Basic YXBwLkFjY291bnRDcmVhdGlvbjpnb3ZzdGFjaw==</value>
+         <remarks></remarks>
       </environmentVariable>
       <environmentVariable>
          <id>maxAccountRequestID</id>
