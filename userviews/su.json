@@ -249,6 +249,7 @@
     },
     "setting": {"properties": {
         "__": "",
+        "tempDisablePermissionChecking": "",
         "userviewDescription": "",
         "noPermissionMessage": "",
         "userviewId": "su",
@@ -264,11 +265,11 @@
         "userview_thumbnail": "#appResource.user-1.png#",
         "userview_category": "",
         "theme": {
-            "className": "org.joget.gov.GovTheme",
+            "className": "org.joget.plugin.enterprise.ProgressiveTheme",
             "properties": {
                 "dx8navBadge": "#1677FF",
                 "css": "body#forgotPasswordMenu .runProcess-body-header{\n    text-align: center;\n}\n\nbody#forgotPasswordMenu i.form-button, .form-column.form-column-horizontal, .form-column .form-cell, body#forgotPasswordMenu i.form-button #assignmentComplete {\n    width: 100%;\n}\n\n",
-                "primaryColor": "DARKROYALBLUE",
+                "primaryColor": "INDIGO",
                 "loginBackground": "",
                 "disablePush": "",
                 "dx8navLinkColor": "rgba(0, 0, 0, 0.88)",
