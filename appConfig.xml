@@ -11,16 +11,16 @@
    <pluginDefaultPropertiesList/>
    <environmentVariableList>
       <environmentVariable>
-         <id>maxAccountRequestID</id>
-         <appId>AccCreation</appId>
-         <appVersion>6</appVersion>
-         <value>0</value>
-      </environmentVariable>
-      <environmentVariable>
          <id>apiAuthorizationJoget</id>
          <appId>AccCreation</appId>
          <appVersion>6</appVersion>
          <value>Basic YWRtaW46N1pzNmI3e0M/alhN</value>
+      </environmentVariable>
+      <environmentVariable>
+         <id>maxAccountRequestID</id>
+         <appId>AccCreation</appId>
+         <appVersion>6</appVersion>
+         <value>0</value>
       </environmentVariable>
       <environmentVariable>
          <id>SignupNo</id>
