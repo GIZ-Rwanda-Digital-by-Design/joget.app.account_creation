@@ -34,24 +34,6 @@
                             }
                         },
                         {
-                            "className": "org.joget.apps.form.lib.TextField",
-                            "properties": {
-                                "encryption": "",
-                                "readonly": "",
-                                "size": "50",
-                                "maxlength": "",
-                                "validator": {
-                                    "className": "",
-                                    "properties": {}
-                                },
-                                "workflowVariable": "",
-                                "id": "lastName",
-                                "label": "Last name",
-                                "value": "",
-                                "readonlyLabel": ""
-                            }
-                        },
-                        {
                             "className": "org.joget.apps.form.lib.SelectBox",
                             "properties": {
                                 "controlField": "",
@@ -139,6 +121,24 @@
                         {
                             "className": "org.joget.apps.form.lib.TextField",
                             "properties": {
+                                "encryption": "",
+                                "readonly": "",
+                                "size": "50",
+                                "maxlength": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "workflowVariable": "",
+                                "id": "lastName",
+                                "label": "Last name",
+                                "value": "",
+                                "readonlyLabel": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.TextField",
+                            "properties": {
                                 "requiredSanitize": "",
                                 "maxlength": "",
                                 "validator": {
@@ -211,60 +211,16 @@
         },
         {
             "elements": [{
-                "elements": [
-                    {
-                        "className": "org.joget.apps.form.lib.SelectBox",
-                        "properties": {
-                            "controlField": "",
-                            "multiple": "true",
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
-                            "label": "Groups requested (more than one possible)",
-                            "fieldInput-style-height": "15em",
-                            "readonly": "",
-                            "size": "10",
-                            "optionsBinder": {
-                                "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
-                                "properties": {
-                                    "headers": [{
-                                        "name": "Authorization",
-                                        "value": "#envVariable.apiAuthorizationJoget#"
-                                    }],
-                                    "addEmptyOption": "true",
-                                    "groupingColumn": "",
-                                    "requestType": "post",
-                                    "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/directory/admin/group/list",
-                                    "multirowBaseObject": "data",
-                                    "emptyDependencyValueCheck": "",
-                                    "params": [],
-                                    "postMethod": "",
-                                    "labelColumn": "name",
-                                    "copyCookies": "",
-                                    "cacheInterval": "",
-                                    "debugMode": "true",
-                                    "idColumn": "id"
-                                }
-                            },
-                            "options": [],
-                            "workflowVariable": "",
-                            "id": "groupsRequested",
-                            "value": "",
-                            "readonlyLabel": ""
-                        }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "requiredSanitize": "",
-                            "autoPopulate": "",
-                            "id": "field13",
-                            "label": "",
-                            "value": "You will be notified via email when your Service Account is approved."
-                        }
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "requiredSanitize": "",
+                        "autoPopulate": "",
+                        "id": "field13",
+                        "label": "",
+                        "value": "You will be notified via email when your Service Account is approved."
                     }
-                ],
+                }],
                 "className": "org.joget.apps.form.model.Column",
                 "properties": {"width": "100%"}
             }],
