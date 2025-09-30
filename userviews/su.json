@@ -268,7 +268,7 @@
             "className": "org.joget.marketplace.EssenceTheme",
             "properties": {
                 "dx8navBadge": "#1677FF",
-                "css": "body#forgotPasswordMenu .runProcess-body-header{\n    text-align: center;\n}\n\nbody#forgotPasswordMenu i.form-button, .form-column.form-column-horizontal, .form-column .form-cell, body#forgotPasswordMenu i.form-button #assignmentComplete {\n    width: 100%;\n}\n\n",
+                "css": "\n/*.navbar.hide-navbar-padding {*/\n/*  padding-left: 0 !important;*/\n/*  padding-right: 0 !important;*/\n/*}*/\n\n/*header.navbar.full-width {*/\n/*  width: 100% !important;*/\n/*  margin: 0 !important;*/\n/*  padding: 0 !important;*/\n/*  box-shadow: none !important;*/\n/*}*/\n\n/*header.navbar.full-width .navbar-inner {*/\n/*  padding-left: 0 !important;*/\n/*  padding-right: 0 !important;*/\n/*}*/\n\n/*#page.full-width {*/\n/*  width: 100% !important;*/\n/*  margin-left: 0 !important;*/\n/*  padding-left: 0 !important;*/\n/*  padding-right: 0 !important;*/\n/*}*/\n\n/*header.navbar.full-width {*/\n/*  width: 100% !important;*/\n/*  margin: 0 !important;*/\n/*  padding: 0 !important;*/\n/*  box-shadow: none !important;*/\n/*  background: white !important;*/\n/*}*/\n\n/* Scope to this page wrapper (from your screenshot) */\n#homePageMenu #section-actions,\n#formLandingPageForm #section-actions {\n  display: none !important;   /* hides the whole actions row that contains \"Save\" */\n}\n\n/* Extra safety: hide Save controls if they\u2019re rendered without the section wrapper */\n#homePageMenu .section-actions button,\n#homePageMenu .section-actions input[type=\"submit\"],\n#formLandingPageForm .section-actions button,\n#formLandingPageForm .section-actions input[type=\"submit\"] {\n  display: none !important;\n}\n\n/* Hide the \"Print\" link on this page only */\n#homePageMenu a[href*=\"print\"],\n#homePageMenu .print,\n#homePageMenu button.print {\n  display: none !important;\n}\n\n#homePageMenu ~ a.print-button {\n    display: none !important;\n}\n",
                 "primaryColor": "INDIGO",
                 "loginBackground": "",
                 "disablePush": "",
@@ -310,7 +310,7 @@
                 "buttonColor": "GREY",
                 "displayCategoryLabel": "",
                 "roundedFieldDesign": "",
-                "js": "",
+                "js": "document.addEventListener(\"DOMContentLoaded\", function () {\n    if (document.querySelector(\"#homePageMenu\")) {\n        const printBtn = document.querySelector(\"#content a.print-button\");\n        if (printBtn) printBtn.remove();\n    }\n});\n\n//   document.addEventListener(\"DOMContentLoaded\", function () {\n//     const navEntry = performance.getEntriesByType(\"navigation\")[0];\n//     const isReload = navEntry?.type === \"reload\";\n\n//     const urlContainsCreateAccount = window.location.href.includes(\"createAccount\");\n\n//     if (isReload && urlContainsCreateAccount) {\n//       // Hide sidebar\n//       const sidebar = document.getElementById(\"sidebar\");\n//       if (sidebar) {\n//         sidebar.style.display = \"none\";\n//       }\n\n//       // Stretch the main page container\n//       const page = document.getElementById(\"page\");\n//       if (page) {",
                 "compactTheme": "",
                 "dx8navActiveIconColor": "#1677FF",
                 "dx8navScrollbarThumb": "#C4C4C4",
