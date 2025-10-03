@@ -204,8 +204,9 @@
                         "runProcessSubmitLabel": "",
                         "id": "55F23280090D47051F03D435F9B0AD35",
                         "processDefId": "resetPasswordProcess",
-                        "redirectUrlAfterComplete": "",
-                        "fieldPassover": ""
+                        "redirectUrlAfterComplete": "#request.scheme#://#request.serverName#/jw/web/userview/inputOutputCoefficientPoC/portal/_/home",
+                        "fieldPassover": "",
+                        "iconIncluded": false
                     }
                 },
                 {
