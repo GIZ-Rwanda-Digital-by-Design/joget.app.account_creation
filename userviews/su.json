@@ -299,7 +299,7 @@
         "welcomeMessage": "",
         "name": "Create Account",
         "description": "",
-        "footerMessage": "Powered by Joget",
+        "footerMessage": "<div style=\"width: 100%; background-color: white;\">\n    <div class=\"footer\" style=\"max-width: 100%; background-color: white; color: #37517E; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;\">\n        <div style=\"font-size: 14px;\">\n            © Developed for <span style=\"font-weight: bold;\">Ministry of Industry Ethiopia<\/span>\n        <\/div>\n        <div style=\"display: flex; align-items: center; font-size: 14px;\">\n            Developed By&nbsp;\n            <a href=\"https://www.giz.de/en/html/index.html\" target=\"_blank\" style=\"color: #37517E; font-weight: bold; text-decoration: none;\">GIZ&nbsp;<\/a> \nwith \n<a href=\"https://govstack.global\">\n<img src=\"#appResource.gslogo.png#\" alt=\"GovStack\" style=\"margin-right: 10px; margin-left: 10px; height: 30px; border: 1px solid #37517E;\"> \n<\/a>\n\n            funded by&nbsp;\n            <a href=\"https://www.bmz.de/en\" target=\"_blank\" style=\"color: #37517E; font-weight: bold; text-decoration: none;\">BMZ<\/a>\n            <img src=\"#appResource.DEgov-BMZ-Logo_en.svg.png#\" alt=\"BMZ\" style=\"margin-left: 10px; height: 30px; border: 1px solid #37517E;\">\n        <\/div>\n    <\/div>\n<\/div>",
         "id": "su"
     },
     "setting": {"properties": {
