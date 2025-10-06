@@ -22,7 +22,7 @@
                         "enableOffline": "",
                         "afterSavedReloadTarget": "top",
                         "customId": "createAccount",
-                        "messageShowAfterComplete": "Thank you for signing up. You will be notified via email when your Joget Account is approved.",
+                        "messageShowAfterComplete": "Thank you for signing up. You will be notified via email when your Account is approved.",
                         "userviewCacheDuration": "",
                         "showInPopupDialog": "",
                         "userviewCacheScope": "",
@@ -30,8 +30,9 @@
                         "runProcessSubmitLabel": "",
                         "id": "CA3049E10BFC4E1C854FD263255C8349",
                         "processDefId": "signup",
-                        "redirectUrlAfterComplete": "/jw/web/userview/appcenter/home/_/home",
-                        "fieldPassover": ""
+                        "redirectUrlAfterComplete": "/jw/web/userview/inputOutputCoefficientPoC/portal/_/home",
+                        "fieldPassover": "",
+                        "iconIncluded": false
                     }
                 },
                 {
