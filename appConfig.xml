@@ -34,7 +34,6 @@
          <appId>AccCreation</appId>
          <appVersion>6</appVersion>
          <value>#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/userview/AccCreation/su/_/</value>
-         <remarks></remarks>
       </environmentVariable>
    </environmentVariableList>
    <messageList/>
