@@ -244,7 +244,7 @@
                   <processDefId>forgotPasswordProcess</processDefId>
                   <activityDefId>sendEmailTool</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.EmailTool&quot;,&quot;properties&quot;:{&quot;cc&quot;:&quot;packmutangana@gmail.com&quot;,&quot;toSpecific&quot;:&quot;#form.account_forgot.email#&quot;,&quot;bcc&quot;:&quot;packmutangana@gmail.com&quot;,&quot;icsAttachement&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Test email&quot;,&quot;retryCount&quot;:&quot;&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;toParticipantId&quot;:&quot;#form.account_forgot.email#&quot;,&quot;message&quot;:&quot;&lt;p&gt;Hello, #variable.email#&lt;\/p&gt;\n\n&lt;p&gt;We received a request to reset your password. Click the link below to set a new password:&lt;\/p&gt;\n\n&lt;p&gt;\n  &lt;a href=\&quot;#appVariable.url#resetPasswordProcessMenu?token=#variable.token#\&quot;&gt;\n    Reset Password\n  &lt;\/a&gt;\n&lt;\/p&gt;\n\n&lt;p&gt;&lt;strong&gt;This link will expire in 3 minutes.&lt;\/strong&gt; If you didn&apos;t request a password reset, please ignore this email.&lt;\/p&gt;\n\n&lt;p&gt;Thanks&lt;\/p&gt;&quot;,&quot;p12&quot;:&quot;&quot;,&quot;security&quot;:&quot;TLS&quot;,&quot;password&quot;:&quot;jtiw gejx ghzs wkgt&quot;,&quot;storepass&quot;:&quot;jtiw gejx ghzs wkgt&quot;,&quot;port&quot;:&quot;587&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;alias&quot;:&quot;&quot;,&quot;files&quot;:[],&quot;from&quot;:&quot;moi.ethiopia@gmail.com&quot;,&quot;retryInterval&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;username&quot;:&quot;rbfrpractical@gmail.com&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.EmailTool&quot;,&quot;properties&quot;:{&quot;cc&quot;:&quot;packmutangana@gmail.com&quot;,&quot;toSpecific&quot;:&quot;#form.account_forgot.email#&quot;,&quot;bcc&quot;:&quot;packmutangana@gmail.com&quot;,&quot;icsAttachement&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Test email&quot;,&quot;retryCount&quot;:&quot;&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;toParticipantId&quot;:&quot;#form.account_forgot.email#&quot;,&quot;message&quot;:&quot;&lt;p&gt;Hello, #variable.email#&lt;\/p&gt;\n\n&lt;p&gt;We received a request to reset your password. Click the link below to set a new password:&lt;\/p&gt;\n\n&lt;p&gt;\n  &lt;a href=\&quot;#appVariable.url#resetPasswordProcessMenu?token=#variable.token#\&quot;&gt;\n    Reset Password\n  &lt;\/a&gt;\n&lt;\/p&gt;\n\n&lt;p&gt;&lt;strong&gt;This link will expire in 3 minutes.&lt;\/strong&gt; If you didn&apos;t request a password reset, please ignore this email.&lt;\/p&gt;\n\n&lt;p&gt;Thanks&lt;\/p&gt;&quot;,&quot;p12&quot;:&quot;&quot;,&quot;security&quot;:&quot;TLS&quot;,&quot;password&quot;:&quot;&quot;,&quot;storepass&quot;:&quot;&quot;,&quot;port&quot;:&quot;&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;host&quot;:&quot;&quot;,&quot;alias&quot;:&quot;&quot;,&quot;files&quot;:[],&quot;from&quot;:&quot;&quot;,&quot;retryInterval&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;username&quot;:&quot;&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -259,20 +259,20 @@
          </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
-               <string>resetPasswordProcess::requestor</string>
+               <string>forgotPasswordProcess::anonymous</string>
                <packageParticipant>
-                  <processDefId>resetPasswordProcess</processDefId>
-                  <participantId>requestor</participantId>
+                  <processDefId>forgotPasswordProcess</processDefId>
+                  <participantId>anonymous</participantId>
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
                </packageParticipant>
             </entry>
             <entry>
-               <string>forgotPasswordProcess::anonymous</string>
+               <string>resetPasswordProcess::requestor</string>
                <packageParticipant>
-                  <processDefId>forgotPasswordProcess</processDefId>
-                  <participantId>anonymous</participantId>
+                  <processDefId>resetPasswordProcess</processDefId>
+                  <participantId>requestor</participantId>
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
