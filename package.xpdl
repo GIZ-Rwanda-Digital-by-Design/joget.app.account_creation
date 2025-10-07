@@ -462,7 +462,7 @@
                     <Performer>requestor</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,460"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,456"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="updateAndSetNewPassword" Name="Update and set new password">
@@ -472,7 +472,7 @@
                     <Performer>requestor</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="560,720"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="560,716"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="route1">
@@ -491,7 +491,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="360,480"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="360,476"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="tokenNotValidatedAnd" Name="Token not validated and redirect to the page">
@@ -506,7 +506,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,280"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,276"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="tokenIsUsed" Name="Token is used">
@@ -516,7 +516,7 @@
                     <Performer>requestor</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="340,300"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="340,296"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="setNewPassword" Name="Set new password">
@@ -526,7 +526,7 @@
                     <Performer>requestor</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="880,580"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="880,576"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="tokenExpired" Name="Token Expired">
@@ -536,7 +536,7 @@
                     <Performer>requestor</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="requestor"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,480"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="600,476"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -586,9 +586,9 @@
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="requestor"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=requestor,CONNECTING_ACTIVITY_ID=verifyTokenIsExistAndNot,X_OFFSET=120,Y_OFFSET=280,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=requestor,CONNECTING_ACTIVITY_ID=tokenNotValidatedAnd,X_OFFSET=840,Y_OFFSET=320,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=requestor,CONNECTING_ACTIVITY_ID=setNewPassword,X_OFFSET=1120,Y_OFFSET=600,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=requestor,CONNECTING_ACTIVITY_ID=verifyTokenIsExistAndNot,X_OFFSET=120,Y_OFFSET=276,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=requestor,CONNECTING_ACTIVITY_ID=tokenNotValidatedAnd,X_OFFSET=840,Y_OFFSET=316,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=requestor,CONNECTING_ACTIVITY_ID=setNewPassword,X_OFFSET=1120,Y_OFFSET=596,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
     </WorkflowProcesses>
