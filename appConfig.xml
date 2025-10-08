@@ -14,7 +14,8 @@
          <id>apiAuthorizationJoget</id>
          <appId>AccCreation</appId>
          <appVersion>6</appVersion>
-         <value>Basic YXBwLkFjY291bnRDcmVhdGlvbjpnb3ZzdGFjaw==</value>
+         <value>#envVariable.JOGET_APP_ACCOUNT_CREATION_PASSWORD#</value>
+         <remarks></remarks>
       </environmentVariable>
       <environmentVariable>
          <id>maxAccountRequestID</id>
@@ -43,6 +44,6 @@
     groups to be pulled with authentication
     authentication stored as environment variable
     
-    Feature forgot passowrd</description>
+    Feature added: forgot password</description>
    <createdBy>thomas.wiemann@giz.de</createdBy>
 </appDefinition>
