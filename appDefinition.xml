@@ -365,6 +365,6 @@
     groups to be pulled with authentication
     authentication stored as environment variable
     
-    Feature added: forgot passowrd</description>
+    Feature added: forgot password</description>
    <createdBy>thomas.wiemann@giz.de</createdBy>
 </appDefinition>
