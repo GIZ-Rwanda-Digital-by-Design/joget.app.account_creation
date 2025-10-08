@@ -40,6 +40,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
+                        "permissionHidden": "true",
                         "permission_rules": {
                             "5f01f84e-b536-041d-4218-07c6498220e7": {
                                 "permissionHidden": "true",
@@ -60,7 +61,8 @@
                         "cacheListAction": "",
                         "userviewCacheScope": "",
                         "rowCount": "true",
-                        "id": "B2FF94272205462FA1EDE118613316F3"
+                        "id": "B2FF94272205462FA1EDE118613316F3",
+                        "permissionDeny": ""
                     }
                 },
                 {
@@ -68,6 +70,7 @@
                     "properties": {
                         "appFilter": "all",
                         "userviewCacheDuration": "20",
+                        "permissionHidden": "true",
                         "userviewCacheScope": "",
                         "permission_rules": {
                             "5f01f84e-b536-041d-4218-07c6498220e7": {
@@ -80,6 +83,7 @@
                         "label": "Inbox",
                         "rowCount": "false",
                         "id": "CDD6814D9D23458AA8A02A5566F95DDE",
+                        "permissionDeny": "",
                         "buttonPosition": "bottomLeft"
                     }
                 }
