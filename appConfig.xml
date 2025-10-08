@@ -14,7 +14,8 @@
          <id>apiAuthorizationJoget</id>
          <appId>AccCreation</appId>
          <appVersion>6</appVersion>
-         <value>#envVariable.JOGET_APP_ACCOUNT_CREATION_PASSWORD#</value>
+         <value>Basic #envVariable.JOGET_APP_ACCOUNT_CREATION_PASSWORD#</value>
+         <remarks></remarks>
       </environmentVariable>
       <environmentVariable>
          <id>maxAccountRequestID</id>
