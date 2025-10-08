@@ -259,20 +259,20 @@
          </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
-               <string>resetPasswordProcess::requestor</string>
+               <string>forgotPasswordProcess::anonymous</string>
                <packageParticipant>
-                  <processDefId>resetPasswordProcess</processDefId>
-                  <participantId>requestor</participantId>
+                  <processDefId>forgotPasswordProcess</processDefId>
+                  <participantId>anonymous</participantId>
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
                </packageParticipant>
             </entry>
             <entry>
-               <string>forgotPasswordProcess::anonymous</string>
+               <string>resetPasswordProcess::requestor</string>
                <packageParticipant>
-                  <processDefId>forgotPasswordProcess</processDefId>
-                  <participantId>anonymous</participantId>
+                  <processDefId>resetPasswordProcess</processDefId>
+                  <participantId>requestor</participantId>
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
@@ -364,6 +364,7 @@
    <description>Version 6 Account Creation App
     groups to be pulled with authentication
     authentication stored as environment variable
+    git disabled for environment variables.
     
     Feature added: forgot password</description>
    <createdBy>thomas.wiemann@giz.de</createdBy>
