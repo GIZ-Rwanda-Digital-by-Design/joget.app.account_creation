@@ -111,6 +111,7 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
+                        "permission_rules": {"5f01f84e-b536-041d-4218-07c6498220e7": {}},
                         "keyName": "",
                         "label": "Generate Token",
                         "redirectTarget": "",
@@ -135,6 +136,7 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
+                        "permission_rules": {"5f01f84e-b536-041d-4218-07c6498220e7": {}},
                         "keyName": "",
                         "customFooter": "",
                         "label": "List of Tokens",
@@ -155,6 +157,10 @@
             ],
             "properties": {
                 "hide": "",
+                "permission_rules": {"5f01f84e-b536-041d-4218-07c6498220e7": {
+                    "hide": "yes",
+                    "permissionDeny": ""
+                }},
                 "permission": {
                     "className": "",
                     "properties": {}
