@@ -105,30 +105,54 @@
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
-            "menus": [{
-                "className": "org.joget.apps.userview.lib.RunProcess",
-                "properties": {
-                    "runProcessDirectly": "Yes",
-                    "fieldPassoverMethod": "append",
-                    "keyName": "",
-                    "label": "Generate Token",
-                    "redirectTarget": "",
-                    "enableOffline": "",
-                    "afterSavedReloadTarget": "true",
-                    "customId": "generateTokenMenu",
-                    "userviewCacheDuration": "20",
-                    "messageShowAfterComplete": "",
-                    "showInPopupDialog": "",
-                    "userviewCacheScope": "",
-                    "actionAfterSaved": "",
-                    "runProcessSubmitLabel": "",
-                    "id": "5C2D7379116C4793A001268E974521C7",
-                    "iconIncluded": false,
-                    "processDefId": "generateapiTokenProcess",
-                    "redirectUrlAfterComplete": "",
-                    "fieldPassover": ""
+            "menus": [
+                {
+                    "className": "org.joget.apps.userview.lib.RunProcess",
+                    "properties": {
+                        "runProcessDirectly": "Yes",
+                        "fieldPassoverMethod": "append",
+                        "keyName": "",
+                        "label": "Generate Token",
+                        "redirectTarget": "",
+                        "enableOffline": "",
+                        "afterSavedReloadTarget": "true",
+                        "customId": "generateTokenMenu",
+                        "userviewCacheDuration": "20",
+                        "messageShowAfterComplete": "",
+                        "showInPopupDialog": "",
+                        "userviewCacheScope": "",
+                        "actionAfterSaved": "",
+                        "runProcessSubmitLabel": "",
+                        "id": "5C2D7379116C4793A001268E974521C7",
+                        "iconIncluded": false,
+                        "processDefId": "generateapiTokenProcess",
+                        "redirectUrlAfterComplete": "",
+                        "fieldPassover": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.DataListMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customHeader": "",
+                        "keyName": "",
+                        "customFooter": "",
+                        "label": "List of Tokens",
+                        "enableOffline": "",
+                        "customId": "listOfTokensMenu",
+                        "buttonPosition": "bothLeft",
+                        "datalistId": "allUsersList",
+                        "checkboxPosition": "left",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "cacheListAction": "",
+                        "userviewCacheScope": "",
+                        "rowCount": "",
+                        "id": "11CBB68A82194D8E1F3645B2FF7D986D",
+                        "iconIncluded": false
+                    }
                 }
-            }],
+            ],
             "properties": {
                 "hide": "",
                 "permission": {
