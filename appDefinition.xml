@@ -53,6 +53,26 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>process4::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>process4</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>generateapiTokenProcess::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>generateapiTokenProcess</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <formId>apiTokenForm</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>forgotPasswordProcess::user_not_found_page</string>
                <packageActivityForm>
                   <processDefId>forgotPasswordProcess</processDefId>
@@ -269,16 +289,6 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>forgotPasswordProcess::anonymous</string>
-               <packageParticipant>
-                  <processDefId>forgotPasswordProcess</processDefId>
-                  <participantId>anonymous</participantId>
-                  <type>plugin</type>
-                  <value>org.joget.apps.app.lib.BeanShellTool</value>
-                  <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>signup::signup_anonomyous</string>
                <packageParticipant>
                   <processDefId>signup</processDefId>
@@ -289,12 +299,40 @@
                </packageParticipant>
             </entry>
             <entry>
+               <string>forgotPasswordProcess::anonymous</string>
+               <packageParticipant>
+                  <processDefId>forgotPasswordProcess</processDefId>
+                  <participantId>anonymous</participantId>
+                  <type>plugin</type>
+                  <value>org.joget.apps.app.lib.BeanShellTool</value>
+                  <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process4::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>process4</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
                <string>signup::Approver</string>
                <packageParticipant>
                   <processDefId>signup</processDefId>
                   <participantId>Approver</participantId>
                   <type>group</type>
                   <value>app_accountCreation_Approver</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>generateapiTokenProcess::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>generateapiTokenProcess</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
