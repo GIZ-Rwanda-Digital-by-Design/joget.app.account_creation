@@ -141,7 +141,7 @@
                         "enableOffline": "",
                         "customId": "listOfTokensMenu",
                         "buttonPosition": "bothLeft",
-                        "datalistId": "allUsersList",
+                        "datalistId": "tokenList",
                         "checkboxPosition": "left",
                         "selectionType": "multiple",
                         "userviewCacheDuration": "20",
