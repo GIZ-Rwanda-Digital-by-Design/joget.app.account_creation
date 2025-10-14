@@ -16,10 +16,25 @@
         {
             "filterable": true,
             "hidden": "false",
+            "renderHtml": "",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "label": "Token",
+            "sortable": "false",
+            "datalist_type": "column",
+            "exclude_export": "",
             "name": "token",
+            "width": "",
+            "headerAlignment": "",
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "style": "",
             "id": "column_1",
-            "label": "token",
-            "sortable": "false"
+            "alignment": ""
         },
         {
             "filterable": true,
