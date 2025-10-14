@@ -111,7 +111,10 @@
                     "properties": {
                         "runProcessDirectly": "Yes",
                         "fieldPassoverMethod": "append",
-                        "permission_rules": {"5f01f84e-b536-041d-4218-07c6498220e7": {}},
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "keyName": "",
                         "label": "Generate Token",
                         "redirectTarget": "",
@@ -127,7 +130,7 @@
                         "id": "5C2D7379116C4793A001268E974521C7",
                         "iconIncluded": false,
                         "processDefId": "generateapiTokenProcess",
-                        "redirectUrlAfterComplete": "",
+                        "redirectUrlAfterComplete": "listOfTokensMenu",
                         "fieldPassover": ""
                     }
                 },
@@ -136,7 +139,10 @@
                     "properties": {
                         "cacheAllLinks": "",
                         "customHeader": "",
-                        "permission_rules": {"5f01f84e-b536-041d-4218-07c6498220e7": {}},
+                        "permission_rules": {
+                            "5f01f84e-b536-041d-4218-07c6498220e7": {},
+                            "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                        },
                         "keyName": "",
                         "customFooter": "",
                         "label": "List of Tokens",
@@ -157,10 +163,13 @@
             ],
             "properties": {
                 "hide": "yes",
-                "permission_rules": {"5f01f84e-b536-041d-4218-07c6498220e7": {
-                    "hide": "yes",
-                    "permissionDeny": ""
-                }},
+                "permission_rules": {
+                    "5f01f84e-b536-041d-4218-07c6498220e7": {
+                        "hide": "yes",
+                        "permissionDeny": ""
+                    },
+                    "053faca4-7ed7-9e1c-e246-d3eebc82470e": {}
+                },
                 "permission": {
                     "className": "",
                     "properties": {}
