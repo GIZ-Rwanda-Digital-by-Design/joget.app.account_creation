@@ -596,6 +596,18 @@
         </WorkflowProcess>
         <WorkflowProcess Id="generateapiTokenProcess" Name="Generate API Token Process">
             <ProcessHeader DurationUnit="h"/>
+            <DataFields>
+                <DataField Id="token" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="active" IsArray="FALSE">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
             <Activities>
                 <Activity Id="generateToken" Name="Generate Token">
                     <Implementation>
