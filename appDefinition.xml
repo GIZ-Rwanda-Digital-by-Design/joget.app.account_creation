@@ -9,6 +9,17 @@
          <name>Account Creation App</name>
          <packageActivityFormMap>
             <entry>
+               <string>generateapiTokenProcess::activity1</string>
+               <packageActivityForm>
+                  <processDefId>generateapiTokenProcess</processDefId>
+                  <activityDefId>activity1</activityDefId>
+                  <formId>apiTokenForm</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>resetPasswordProcess::runProcess</string>
                <packageActivityForm>
                   <processDefId>resetPasswordProcess</processDefId>
