@@ -57,7 +57,7 @@
                <packageActivityForm>
                   <processDefId>generateapiTokenProcess</processDefId>
                   <activityDefId>runProcess</activityDefId>
-                  <formId>apiTokenForm</formId>
+                  <formId></formId>
                   <type>SINGLE</type>
                   <autoContinue>true</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
