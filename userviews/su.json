@@ -156,7 +156,7 @@
                 }
             ],
             "properties": {
-                "hide": "",
+                "hide": "yes",
                 "permission_rules": {"5f01f84e-b536-041d-4218-07c6498220e7": {
                     "hide": "yes",
                     "permissionDeny": ""
@@ -168,6 +168,7 @@
                 "comment": "",
                 "label": "Token Mgt",
                 "id": "category-D1C9E7BC3EED4E4ECB9330B1A837A28A",
+                "permissionDeny": "",
                 "iconIncluded": false
             }
         },
