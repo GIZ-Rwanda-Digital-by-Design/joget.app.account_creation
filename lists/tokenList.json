@@ -11,7 +11,8 @@
             "name": "username",
             "id": "column_0",
             "label": "Username",
-            "sortable": "false"
+            "sortable": "false",
+            "datalist_type": "column"
         },
         {
             "filterable": true,
@@ -75,6 +76,20 @@
             "cacheRowCount": ""
         }
     },
-    "actions": [],
+    "actions": [{
+        "className": "org.joget.apps.datalist.lib.FormRowDeleteDataListAction",
+        "id": "action_0",
+        "properties": {
+            "deleteFiles": "true",
+            "deleteGridData": "true",
+            "formDefId": "apiTokenForm",
+            "deleteSubformData": "true",
+            "label": "Delete",
+            "confirmation": "",
+            "datalist_type": "action",
+            "iconIncluded": false,
+            "abortRelatedRunningProcesses": "true"
+        }
+    }],
     "order": ""
 }
