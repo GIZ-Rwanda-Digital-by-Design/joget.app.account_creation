@@ -46,7 +46,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "workflowVariable": "",
+                        "workflowVariable": "active",
                         "id": "active",
                         "value": ""
                     }
