@@ -33,7 +33,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "workflowVariable": "",
+                        "workflowVariable": "token",
                         "id": "token",
                         "value": ""
                     }
