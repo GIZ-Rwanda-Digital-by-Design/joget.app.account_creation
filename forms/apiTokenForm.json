@@ -37,6 +37,19 @@
                         "id": "token",
                         "value": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "workflowVariable": "",
+                        "id": "active",
+                        "value": ""
+                    }
                 }
             ],
             "className": "org.joget.apps.form.model.Column",
