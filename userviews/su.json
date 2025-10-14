@@ -106,6 +106,44 @@
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [{
+                "className": "org.joget.apps.userview.lib.RunProcess",
+                "properties": {
+                    "runProcessDirectly": "Yes",
+                    "fieldPassoverMethod": "append",
+                    "keyName": "",
+                    "label": "Generate Token",
+                    "redirectTarget": "",
+                    "enableOffline": "",
+                    "afterSavedReloadTarget": "true",
+                    "customId": "generateTokenMenu",
+                    "userviewCacheDuration": "20",
+                    "messageShowAfterComplete": "",
+                    "showInPopupDialog": "",
+                    "userviewCacheScope": "",
+                    "actionAfterSaved": "",
+                    "runProcessSubmitLabel": "",
+                    "id": "5C2D7379116C4793A001268E974521C7",
+                    "iconIncluded": false,
+                    "processDefId": "generateapiTokenProcess",
+                    "redirectUrlAfterComplete": "",
+                    "fieldPassover": ""
+                }
+            }],
+            "properties": {
+                "hide": "",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "comment": "",
+                "label": "Token Mgt",
+                "id": "category-D1C9E7BC3EED4E4ECB9330B1A837A28A",
+                "iconIncluded": false
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
                 "className": "org.joget.apps.userview.lib.InboxMenu",
                 "properties": {
                     "appFilter": "process",
