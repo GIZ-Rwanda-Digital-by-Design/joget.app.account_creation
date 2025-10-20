@@ -216,20 +216,21 @@
                         {
                             "className": "org.joget.apps.form.lib.PasswordField",
                             "properties": {
+                                "strengthChecker": "true",
                                 "readonly": "",
-                                "size": "50",
+                                "size": "",
                                 "maxlength": "",
                                 "validator": {
                                     "className": "org.joget.apps.form.lib.DefaultValidator",
                                     "properties": {
-                                        "custom-regex": "",
-                                        "message": "",
                                         "type": "",
+                                        "message": "",
                                         "mandatory": "true"
                                     }
                                 },
-                                "id": "password",
                                 "label": "Password",
+                                "id": "password",
+                                "iconIncluded": false,
                                 "value": "",
                                 "readonlyLabel": ""
                             }
