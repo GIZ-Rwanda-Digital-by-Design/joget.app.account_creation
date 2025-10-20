@@ -62,7 +62,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="440,568"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="480,648"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="EmailRejected" Name="Email Rejected">
@@ -72,7 +72,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="540,748"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="480,848"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="Approve" Name="Approve">
@@ -82,7 +82,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="260,548"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="240,648"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="CreateUserRecord" Name="Create User Record">
@@ -92,7 +92,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="560,388"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="480,408"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="EmailApproved" Name="Email Approved">
@@ -102,7 +102,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1300,788"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1320,888"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="CreateUserRoleRecord" Name="Create UserRole Record">
@@ -112,7 +112,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="640,568"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="680,408"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="EmailApprover" Name="Email Approver">
@@ -122,7 +122,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="100,468"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="60,528"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="assignUserGroup" Name="Assign User Group">
@@ -132,7 +132,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1360,548"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1480,488"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="loopOverGroupsZero" Name="Set Loop Counter for Groups to 0">
@@ -142,7 +142,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="60,648"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="60,728"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="groupUpdateRequired" Name="Group Update Required">
@@ -161,7 +161,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1000,648"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1080,728"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="extractGroup" Name="Extract the group from the Array">
@@ -171,7 +171,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1100,388"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="1080,488"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="createUserOrganization" Name="Create UserOrganization">
@@ -181,7 +181,7 @@
                     <Performer>Approver</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="800,668"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="820,728"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -261,9 +261,9 @@
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="signup_anonomyous;Approver"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=signup_anonomyous,CONNECTING_ACTIVITY_ID=EmailApprover,X_OFFSET=100,Y_OFFSET=150,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailRejected,X_OFFSET=860,Y_OFFSET=768,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailApproved,X_OFFSET=1560,Y_OFFSET=808,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=signup_anonomyous,CONNECTING_ACTIVITY_ID=EmailApprover,X_OFFSET=60,Y_OFFSET=170,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailRejected,X_OFFSET=840,Y_OFFSET=848,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=Approver,CONNECTING_ACTIVITY_ID=EmailApproved,X_OFFSET=1560,Y_OFFSET=888,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
         <WorkflowProcess Id="forgotPasswordProcess" Name="Forgot Password">
