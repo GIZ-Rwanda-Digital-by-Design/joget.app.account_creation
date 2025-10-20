@@ -74,17 +74,49 @@
     "pageSize": "100",
     "orderBy": "",
     "description": "",
-    "filters": [{
-        "name": "Status",
-        "id": "filter_0",
-        "label": "Account Status",
-        "type": {
-            "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {}
+    "filters": [
+        {
+            "name": "email",
+            "id": "filter_1",
+            "label": "Email (=Username)",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            },
+            "filterParamName": "d-6777194-fn_email"
         },
-        "datalist_type": "filter",
-        "filterParamName": "d-6777194-fn_Status"
-    }],
+        {
+            "name": "lastName",
+            "id": "filter_2",
+            "label": "Last name",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            },
+            "filterParamName": "d-6777194-fn_lastName"
+        },
+        {
+            "name": "firstName",
+            "id": "filter_3",
+            "label": "First name",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            },
+            "filterParamName": "d-6777194-fn_firstName"
+        },
+        {
+            "name": "Status",
+            "id": "filter_0",
+            "label": "Account Status",
+            "type": {
+                "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
+                "properties": {}
+            },
+            "datalist_type": "filter",
+            "filterParamName": "d-6777194-fn_Status"
+        }
+    ],
     "showDataWhenFilterSet": "",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "buttonPosition": "bottomLeft",
