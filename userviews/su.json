@@ -411,7 +411,7 @@
                 "permission_name": "Admin"
             }
         ],
-        "userview_thumbnail": "#appResource.user-account-login-icon.png#",
+        "userview_thumbnail": "#appResource.user_login_Small.jpeg#",
         "userview_category": "",
         "theme": {
             "className": "org.joget.marketplace.EssenceTheme",
@@ -427,11 +427,11 @@
                 "shortcutLinkLabel": "Shortcut",
                 "dx8-dark-sidebar-navActiveLinkColor": "#FADD12",
                 "disableHelpGuide": "",
-                "logo": "",
+                "logo": "#appResource.user_login_Small.jpeg#",
                 "enableResponsiveSwitch": "true",
                 "dx8-dark-sidebar-navLinkIcon": "#8D98AF",
                 "dx8headerFontColor": "rgba(0, 0, 0, 0.88)",
-                "fav_icon": "",
+                "fav_icon": "#appResource.user_login_Small.jpeg#",
                 "dx8navLinkIcon": "#FFFFFF",
                 "horizontal_menu": "dark-sidebar",
                 "accentColor": "BLUE",
