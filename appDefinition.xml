@@ -348,14 +348,6 @@
    <messageList/>
    <resourceList>
       <appResource>
-         <id>computer-icons-icon-design-download-reset-button-png-favpng-jguwtyxbG9Ru3cgzbk4XM0Vfv.jpg</id>
-         <appId>AccCreation</appId>
-         <appVersion>6</appVersion>
-         <filesize>55698</filesize>
-         <permissionClass>org.joget.apps.userview.lib.LoggedInUserPermission</permissionClass>
-         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;org.joget.apps.userview.lib.LoggedInUserPermission&quot;, &quot;properties&quot;: {}}}</permissionProperties>
-      </appResource>
-      <appResource>
          <id>DEgov-BMZ-Logo_en.svg.png</id>
          <appId>AccCreation</appId>
          <appVersion>6</appVersion>
@@ -392,13 +384,6 @@
          <filesize>14350</filesize>
          <permissionClass>org.joget.apps.userview.lib.LoggedInUserPermission</permissionClass>
          <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;org.joget.apps.userview.lib.LoggedInUserPermission&quot;, &quot;properties&quot;: {}}}</permissionProperties>
-      </appResource>
-      <appResource>
-         <id>user-account-login-icon.png</id>
-         <appId>AccCreation</appId>
-         <appVersion>6</appVersion>
-         <filesize>3978</filesize>
-         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
       </appResource>
       <appResource>
          <id>user-account-login-icon.svg</id>
