@@ -65,7 +65,7 @@
                                         "labelColumn": "name",
                                         "copyCookies": "",
                                         "cacheInterval": "",
-                                        "debugMode": "",
+                                        "debugMode": "true",
                                         "idColumn": "id"
                                     }
                                 },
@@ -97,17 +97,17 @@
                                             "value": "#envVariable.apiAuthorizationJoget#"
                                         }],
                                         "addEmptyOption": "true",
-                                        "groupingColumn": "organization.name",
+                                        "groupingColumn": "organizationId",
                                         "requestType": "post",
-                                        "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/directory/admin/dept/list",
+                                        "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/data/list/AccCreation/departments",
                                         "multirowBaseObject": "data",
-                                        "emptyDependencyValueCheck": "",
+                                        "emptyDependencyValueCheck": "true",
                                         "params": [],
                                         "postMethod": "",
                                         "labelColumn": "name",
                                         "copyCookies": "",
                                         "cacheInterval": "",
-                                        "debugMode": "",
+                                        "debugMode": "true",
                                         "idColumn": "id"
                                     }
                                 },
