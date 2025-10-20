@@ -121,7 +121,7 @@
                   <processDefId>signup</processDefId>
                   <activityDefId>createUserOrganization</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.DatabaseUpdateTool&quot;,&quot;properties&quot;:{&quot;query&quot;:&quot;#if(!EMPTY(form.account_signup.departmentId))\nINSERT INTO dir_employment\nSET\n    id = UUID(),\n    userId = &apos;#form.account_signup.email#&apos;,\n    departmentId = &apos;#form.account_signup.departmentId#&apos;,\n    organizationId = &apos;#form.account_signup.organizationId#&apos;;\n#end&quot;,&quot;jdbcDatasource&quot;:&quot;default&quot;}}]}</pluginProperties>
+                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.BeanShellTool&quot;,&quot;properties&quot;:{&quot;script&quot;:&quot;import java.sql.*;\nimport org.joget.commons.util.LogUtil;\n\n// ===== Configuration =====\nString username = \&quot;#form.account_signup.email#\&quot;;\nString departmentId = \&quot;#form.account_signup.departmentId#\&quot;;\nString organizationId = \&quot;#form.account_signup.organizationId#\&quot;;\nint maxRetries = 5;\nint waitMs = 500; // milliseconds between retries\n\nLogUtil.info(getClassName(), \&quot;Script started for user: \&quot; + username);\n\ntry {\n    // ===== Only continue if departmentId is provided =====\n    if (departmentId == null || departmentId.trim().isEmpty()) {\n        LogUtil.info(getClassName(), \&quot;DepartmentId is empty, skipping dir_employment insert.\&quot;);\n        workflowManager.setVariable(processId, \&quot;scriptErrorMessage\&quot;, \&quot;DepartmentId is empty, employment record not created.\&quot;);\n        return;\n    }\n\n    boolean userExists = false;\n    Connection con = null;\n    PreparedStatement ps = null;\n    ResultSet rs = null;\n\n    // ===== Retry loop to wait until user exists =====\n    for (int i = 0; i &lt; maxRetries; i++) {\n        try {\n            con = dataSource.getConnection();\n            ps = con.prepareStatement(\&quot;SELECT id FROM dir_user WHERE username = ?\&quot;);\n            ps.setString(1, username);\n            rs = ps.executeQuery();\n\n            if (rs.next()) {\n                userExists = true;\n                LogUtil.info(getClassName(), \&quot;User found with id: \&quot; + rs.getString(\&quot;id\&quot;));\n                break;\n            } else {\n                LogUtil.info(getClassName(), \&quot;User not found yet, retry \&quot; + (i+1) + \&quot;/\&quot; + maxRetries);\n                Thread.sleep(waitMs);\n            }\n        } finally {\n            if (rs != null) { rs.close(); rs = null; }\n            if (ps != null) { ps.close(); ps = null; }\n            if (con != null) { con.close(); con = null; }\n        }\n    }\n\n    if (!userExists) {\n        String msg = \&quot;User &apos;\&quot; + username + \&quot;&apos; not found in dir_user after \&quot; + maxRetries + \&quot; retries.\&quot;;\n        LogUtil.error(getClassName(), msg);\n        workflowManager.setVariable(processId, \&quot;scriptErrorMessage\&quot;, msg);\n        throw new RuntimeException(msg);\n    }\n\n    // ===== Insert into dir_employment =====\n    con = dataSource.getConnection();\n    ps = con.prepareStatement(\n        \&quot;INSERT INTO dir_employment (id, userId, departmentId, organizationId) \&quot; +\n        \&quot;SELECT UUID(), id, ?, ? FROM dir_user WHERE username = ?\&quot;\n    );\n    ps.setString(1, departmentId);\n    ps.setString(2, organizationId);\n    ps.setString(3, username);\n\n    int inserted = ps.executeUpdate();\n    LogUtil.info(getClassName(), \&quot;dir_employment insert completed, rows inserted: \&quot; + inserted);\n\n} catch (Exception e) {\n    LogUtil.error(getClassName(), \&quot;Error in Script Task: \&quot; + e.getMessage(), e);\n    workflowManager.setVariable(processId, \&quot;scriptErrorMessage\&quot;, \&quot;Error: \&quot; + e.getMessage());\n    throw new RuntimeException(e);\n} finally {\n    try { if (ps != null) ps.close(); } catch (Exception e) {}\n    try { if (con != null) con.close(); } catch (Exception e) {}\n}\n&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -131,15 +131,6 @@
                   <activityDefId>extractGroup</activityDefId>
                   <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
                   <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.BeanShellTool&quot;,&quot;properties&quot;:{&quot;script&quot;:&quot;import org.joget.commons.util.LogUtil;\nimport org.joget.workflow.model.service.*;\n\n\nString groupsRequested = \&quot;#form.account_signup.groupsRequested#\&quot;;\n\nString[] groupsRequestedArray = groupsRequested.split(\&quot;;\&quot;);\n\nint groupCounter = Integer.valueOf(\&quot;#variable.groupCounter#\&quot;);\n\n//LogUtil.info(\&quot;Value of groupCounter             : \&quot;, \&quot;\&quot; + groupCounter);\n//LogUtil.info(\&quot;Value of groupsRequestedArray     : \&quot;, Arrays.toString(groupsRequestedArray));\n//LogUtil.info(\&quot;Value of workflowAssignment       : \&quot;, workflowAssignment.toString());\n\nString group = groupsRequestedArray[groupCounter++];\n\nWorkflowManager wm = (WorkflowManager) pluginManager.getBean(\&quot;workflowManager\&quot;);\nwm.activityVariable(workflowAssignment.getActivityId(),\&quot;group\&quot;, group);\nwm.activityVariable(workflowAssignment.getActivityId(),\&quot;groupCounter\&quot;, String.valueOf(groupCounter));\n\n//LogUtil.info(\&quot;Value of groupCounter             : \&quot;, \&quot;\&quot; + groupCounter);\n//LogUtil.info(\&quot;Value of group                    : \&quot;, \&quot;\&quot; + group);\n&quot;}}]}</pluginProperties>
-               </packageActivityPlugin>
-            </entry>
-            <entry>
-               <string>signup::timiin_loop</string>
-               <packageActivityPlugin>
-                  <processDefId>signup</processDefId>
-                  <activityDefId>timiin_loop</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.MultiTools</pluginName>
-                  <pluginProperties>{&quot;runInMultiThread&quot;:&quot;&quot;,&quot;comment&quot;:&quot;&quot;,&quot;tools&quot;:[{&quot;className&quot;:&quot;org.joget.apps.app.lib.BeanShellTool&quot;,&quot;properties&quot;:{&quot;script&quot;:&quot;import java.sql.*;\nimport org.joget.apps.app.service.AppUtil;\n\nConnection con = null;\nPreparedStatement ps = null;\nResultSet rs = null;\n\nString username = \&quot;#form.account_signup.email#\&quot;;\nboolean exists = false;\n\nfor (int i = 0; i &lt; 5; i++) {\n    try {\n        con = AppUtil.getApplicationDatasource().getConnection();\n        ps = con.prepareStatement(\&quot;SELECT id FROM dir_user WHERE username = ?\&quot;);\n        ps.setString(1, username);\n        rs = ps.executeQuery();\n\n        if (rs.next()) {\n            exists = true;\n            break;\n        } else {\n            Thread.sleep(500);\n        }\n    } catch (Exception e) {\n        // ignore\n    } finally {\n        try { if (rs != null) rs.close(); } catch (Exception e) {}\n        try { if (ps != null) ps.close(); } catch (Exception e) {}\n        try { if (con != null) con.close(); } catch (Exception e) {}\n    }\n}\n\nif (!exists) {\n    throw new RuntimeException(\&quot;User not found in dir_user after 5 retries.\&quot;);\n}\n\n// INSERT in dir_employment, nur wenn der User existiert\ntry {\n    con = AppUtil.getApplicationDatasource().getConnection();\n    ps = con.prepareStatement(\n        \&quot;INSERT INTO dir_employment (id, userId, departmentId, organizationId) \&quot; +\n        \&quot;SELECT UUID(), id, ?, ? FROM dir_user WHERE username = ?\&quot;\n    );\n    ps.setString(1, \&quot;#form.account_signup.departmentId#\&quot;);\n    ps.setString(2, \&quot;#form.account_signup.organizationId#\&quot;);\n    ps.setString(3, username);\n    ps.executeUpdate();\n} finally {\n    try { if (ps != null) ps.close(); } catch (Exception e) {}\n    try { if (con != null) con.close(); } catch (Exception e) {}\n}\n&quot;}}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
@@ -298,20 +289,20 @@
          </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
-               <string>resetPasswordProcess::requestor</string>
+               <string>forgotPasswordProcess::anonymous</string>
                <packageParticipant>
-                  <processDefId>resetPasswordProcess</processDefId>
-                  <participantId>requestor</participantId>
+                  <processDefId>forgotPasswordProcess</processDefId>
+                  <participantId>anonymous</participantId>
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>
                </packageParticipant>
             </entry>
             <entry>
-               <string>forgotPasswordProcess::anonymous</string>
+               <string>resetPasswordProcess::requestor</string>
                <packageParticipant>
-                  <processDefId>forgotPasswordProcess</processDefId>
-                  <participantId>anonymous</participantId>
+                  <processDefId>resetPasswordProcess</processDefId>
+                  <participantId>requestor</participantId>
                   <type>plugin</type>
                   <value>org.joget.apps.app.lib.BeanShellTool</value>
                   <pluginProperties>{&quot;script&quot;:&quot;import java.util.ArrayList;\nArrayList users = new ArrayList();\nusers.add(\&quot;roleAnonymous\&quot;);\nreturn users;&quot;}</pluginProperties>

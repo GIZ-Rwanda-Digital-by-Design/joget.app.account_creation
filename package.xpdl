@@ -184,16 +184,6 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="860,708"/>
                     </ExtendedAttributes>
                 </Activity>
-                <Activity Id="timiin_loop" Name="Umgehung Timing Problem bei Nutzer anlegen">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>Approver</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="Approver"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="860,388"/>
-                    </ExtendedAttributes>
-                </Activity>
             </Activities>
             <Transitions>
                 <Transition From="approvalDecision" Id="transition1" To="CreateUserRecord">
@@ -262,13 +252,7 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="CreateUserRoleRecord" Id="transition16" To="timiin_loop">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="timiin_loop" Id="transition20" To="createUserOrganization">
+                <Transition From="CreateUserRoleRecord" Id="transition16" To="createUserOrganization">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
