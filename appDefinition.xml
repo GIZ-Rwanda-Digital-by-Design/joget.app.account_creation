@@ -378,27 +378,6 @@
          <permissionProperties>{&quot;hashvariable&quot;:&quot;#appResource.moi_logo_0.png#&quot;,&quot;permission&quot;:{&quot;className&quot;:&quot;org.joget.apps.userview.lib.LoggedInUserPermission&quot;,&quot;properties&quot;:{}}}</permissionProperties>
       </appResource>
       <appResource>
-         <id>user_login.png</id>
-         <appId>AccCreation</appId>
-         <appVersion>6</appVersion>
-         <filesize>444943</filesize>
-         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
-      </appResource>
-      <appResource>
-         <id>user_pw_reset.png</id>
-         <appId>AccCreation</appId>
-         <appVersion>6</appVersion>
-         <filesize>460535</filesize>
-         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
-      </appResource>
-      <appResource>
-         <id>user-1.png</id>
-         <appId>AccCreation</appId>
-         <appVersion>6</appVersion>
-         <filesize>16137</filesize>
-         <permissionProperties>{&quot;permission&quot;: { &quot;className&quot;: &quot;&quot;, &quot;properties&quot;: {}}}</permissionProperties>
-      </appResource>
-      <appResource>
          <id>user-account-login-icon.png</id>
          <appId>AccCreation</appId>
          <appVersion>6</appVersion>
