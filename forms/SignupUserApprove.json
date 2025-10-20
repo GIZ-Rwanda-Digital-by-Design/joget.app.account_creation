@@ -158,6 +158,12 @@
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
                             "controlField": "",
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Organization",
                             "readonly": "",
                             "size": "",
                             "optionsBinder": {
@@ -182,15 +188,10 @@
                                     "idColumn": "id"
                                 }
                             },
-                            "multiple": "",
                             "options": [],
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
                             "workflowVariable": "",
-                            "label": "Institution",
                             "id": "organizationId",
+                            "iconIncluded": false,
                             "value": "",
                             "readonlyLabel": ""
                         }
@@ -198,7 +199,13 @@
                     {
                         "className": "org.joget.apps.form.lib.SelectBox",
                         "properties": {
-                            "controlField": "",
+                            "controlField": "organizationId",
+                            "multiple": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "label": "Department",
                             "readonly": "",
                             "size": "",
                             "optionsBinder": {
@@ -209,11 +216,11 @@
                                         "value": "#envVariable.apiAuthorizationJoget#"
                                     }],
                                     "addEmptyOption": "true",
-                                    "groupingColumn": "",
+                                    "groupingColumn": "organizationId",
                                     "requestType": "post",
-                                    "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/directory/admin/dept/list?orgId=#form.account_signup.organizationId#",
+                                    "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/data/list/AccCreation/departments",
                                     "multirowBaseObject": "data",
-                                    "emptyDependencyValueCheck": "",
+                                    "emptyDependencyValueCheck": "true",
                                     "params": [],
                                     "postMethod": "",
                                     "labelColumn": "name",
@@ -223,15 +230,10 @@
                                     "idColumn": "id"
                                 }
                             },
-                            "multiple": "",
                             "options": [],
-                            "validator": {
-                                "className": "",
-                                "properties": {}
-                            },
                             "workflowVariable": "",
-                            "label": "Department",
                             "id": "departmentId",
+                            "iconIncluded": false,
                             "value": "",
                             "readonlyLabel": ""
                         }
