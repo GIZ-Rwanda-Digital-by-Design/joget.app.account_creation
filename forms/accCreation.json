@@ -39,6 +39,12 @@
                             "className": "org.joget.apps.form.lib.SelectBox",
                             "properties": {
                                 "controlField": "",
+                                "multiple": "",
+                                "validator": {
+                                    "className": "",
+                                    "properties": {}
+                                },
+                                "label": "Organization",
                                 "readonly": "",
                                 "size": "",
                                 "optionsBinder": {
@@ -63,15 +69,52 @@
                                         "idColumn": "id"
                                     }
                                 },
-                                "multiple": "",
                                 "options": [],
+                                "workflowVariable": "",
+                                "id": "organizationId",
+                                "iconIncluded": false,
+                                "value": "",
+                                "readonlyLabel": ""
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.SelectBox",
+                            "properties": {
+                                "controlField": "organizationId",
+                                "multiple": "",
                                 "validator": {
                                     "className": "",
                                     "properties": {}
                                 },
+                                "label": "Department",
+                                "readonly": "",
+                                "size": "",
+                                "optionsBinder": {
+                                    "className": "org.joget.apps.form.lib.JsonApiFormOptionsBinder",
+                                    "properties": {
+                                        "headers": [{
+                                            "name": "Authorization",
+                                            "value": "#envVariable.apiAuthorizationJoget#"
+                                        }],
+                                        "addEmptyOption": "true",
+                                        "groupingColumn": "organization.name",
+                                        "requestType": "post",
+                                        "jsonUrl": "#request.scheme#://#request.serverName#:#request.serverPort##request.contextPath#/web/json/directory/admin/dept/list",
+                                        "multirowBaseObject": "data",
+                                        "emptyDependencyValueCheck": "",
+                                        "params": [],
+                                        "postMethod": "",
+                                        "labelColumn": "name",
+                                        "copyCookies": "",
+                                        "cacheInterval": "",
+                                        "debugMode": "",
+                                        "idColumn": "id"
+                                    }
+                                },
+                                "options": [],
                                 "workflowVariable": "",
-                                "label": "Institution",
-                                "id": "organizationId",
+                                "id": "departmentId",
+                                "iconIncluded": false,
                                 "value": "",
                                 "readonlyLabel": ""
                             }
