@@ -8,9 +8,11 @@
     "id": "departments",
     "filters": [],
     "binder": {
-        "name": "",
-        "className": "",
-        "properties": {}
+        "className": "org.joget.marketplace.SqlDataListBinder",
+        "properties": {
+            "primary_key": "id",
+            "sql": "SELECT * FROM `dir_department`;"
+        }
     },
     "actions": [],
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
