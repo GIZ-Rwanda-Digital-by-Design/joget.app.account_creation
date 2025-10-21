@@ -30,7 +30,7 @@
                         "runProcessSubmitLabel": "",
                         "id": "CA3049E10BFC4E1C854FD263255C8349",
                         "processDefId": "signup",
-                        "redirectUrlAfterComplete": "/jw/web/userview/inputOutputCoefficientPoC/portal/_/home",
+                        "redirectUrlAfterComplete": "/jw/web/userview/AccCreation/portal/_/home",
                         "fieldPassover": "",
                         "iconIncluded": false
                     }
