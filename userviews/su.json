@@ -22,7 +22,7 @@
                         "enableOffline": "",
                         "afterSavedReloadTarget": "top",
                         "customId": "createAccount",
-                        "messageShowAfterComplete": "Thank you for signing up. You will be notified via email when your Account is approved.",
+                        "messageShowAfterComplete": "Thank you for signing up. You will be notified via email after your Account was approved.",
                         "userviewCacheDuration": "",
                         "showInPopupDialog": "",
                         "userviewCacheScope": "",
@@ -30,7 +30,7 @@
                         "runProcessSubmitLabel": "",
                         "id": "CA3049E10BFC4E1C854FD263255C8349",
                         "processDefId": "signup",
-                        "redirectUrlAfterComplete": "jw/web/userview/appcenter/home/_/home",
+                        "redirectUrlAfterComplete": "jw/web/login",
                         "fieldPassover": "",
                         "iconIncluded": false
                     }
